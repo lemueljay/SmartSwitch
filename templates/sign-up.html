@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Jquery -->
+    <script type="text/javascript" src="../static/plugins/jquery/jquery-3.2.0.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../static/plugins/boostrap/css/bootstrap.css">
+    <script type="text/javascript" src="../static/plugins/boostrap/js/bootstrap.js"></script>
+    <!-- SemanticUI -->
+    <link rel="stylesheet" href="../static/plugins/semantic/dist/semantic.css">
+    <script type="text/javascript" src="../static/plugins/semantic/dist/semantic.js"></script>
+
+    <link rel="stylesheet" href="../static/css/sign-up.css">
+    <script type="text/javascript" src="../static/js/sign-up.js"></script>
+
+    <title>Sign Up</title>
+</head>
+<body>
+<div class="container signup-box">
+    <div class="row">
+        <div class="col-xs-12 logo text-center">
+            <span class="">Admin</span>
+            <span class=""><strong>SmartSwitch</strong></span>
+        </div>
+        <div class="col-xs-push-4 col-xs-4 cardcontainer">
+            <div class="text-center formheader">Register a new membership.</div>
+            <hr>
+            <form class="ui form" action="/" method="">
+                <div class="field">
+                    <label>First Name</label>
+                    <input type="text" name="firstname" placeholder="First Name">
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input type="text" name="lastname" placeholder="Last Name">
+                </div>
+                <div class="field">
+                    <label>Username</label>
+                    <input type="text" name="username" placeholder="Username">
+                </div>
+                <div class="field">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <button class="ui blue button" type="submit">Submit</button>
+                <div class="ui error message"></div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

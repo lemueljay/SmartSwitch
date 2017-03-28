@@ -1,0 +1,350 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: #f1f1f1;
+}
+
+.navbar.navbar-default {
+    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+    height: 70px;
+    background-color: #2196F3;
+    padding: 10px 20px 0px 20px;
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    font-size: 16px;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: white;
+}
+
+.material-icons {
+    color: white;
+}
+
+.badge {
+    -webkit-transform: translate(-16px, -4px);
+    position: absolute;
+    background-color: red;
+}
+
+#bs-example-navbar-collapse-1 > ul > li > a > i {
+    padding: 4px;
+}
+
+#bs-example-navbar-collapse-1 > ul > li > a > i:hover {
+    background-color: rgba(0,0,0, 0.1);
+    padding: 4px;
+    animation-name: swift-color;
+    animation-duration: 0.7s;
+}
+
+@keyframes swift-color {
+    from {background-color: rgba(0,0,0, 0);}
+    to {background-color: rgba(0,0,0, 0.1);}
+}
+
+.container.popovers, .container.popovers > .col-xs-12 {
+   padding: 0px;
+}
+
+.material-icons.popup-icons {
+    color: #ccc;
+}
+
+
+.nav.navbar-nav.navbar-right > li {
+    cursor: pointer;
+}
+
+.ui.popup.bottom.center{
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#markallread {
+    margin-right: 20px;
+}
+
+#markallread:hover {
+    cursor: pointer;
+    color: #666;
+}
+
+.task, .notif {
+    padding: 15px 12px 12px 15px;
+}
+
+.taskheading, .tasktext, .notifheading, .notiftext {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.taskheading, .notifheading {
+    color: #000;
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+
+.taskleft, .notifleft {
+    padding: 0px;
+}
+
+.taskimg, .notifimg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+}
+
+.tasktext, .notiftext {
+    font-size: 12px;
+    color: #777;
+}
+
+.notif:hover, .task:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.popoverfootbar{
+    margin-top: 10px;
+    font-size: 11px;
+    color: #777;
+}
+
+.setting > .material-icons {
+    color: black;
+    -webkit-transform: translateY(7px);
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+
+.setting {
+    font-size: 13px;
+    color: #777;
+}
+
+.setting:hover {
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+
+/**/
+
+.bodycontainer {
+    margin: 0px;
+    padding: 0px;
+}
+
+.content, .sidebar {
+    color: black;
+}
+
+.content {
+    margin-top: 80px;
+}
+
+#toggle-sidebar {
+    -webkit-transform: translateY(6px);
+    padding-right: 20px;
+}
+
+#toggle-sidebar:hover {
+    cursor: pointer;
+}
+
+.sidebar {
+    margin-top: 70px;
+    position: fixed;
+    height: calc(100% - 70px);
+    background-color: #fff;
+    padding-right: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 265px;
+    overflow-y: auto;
+    -webkit-scrollbar-face-color: ThreeDFace !important;
+    scrollbar-shadow-color: ThreeDDarkShadow !important;
+    scrollbar-highlight-color: ThreeDHighlight !important;
+    scrollbar-3dlight-color: ThreeDLightShadow !important;
+    scrollbar-darkshadow-color: ThreeDDarkShadow !important;
+    scrollbar-track-color: Scrollbar !important;
+    scrollbar-arrow-color: ButtonText !important;
+
+}
+
+.profile {
+    display: block;
+    height: 129px;
+    margin-bottom: 5px;
+    width: 100%;
+    background: url("../../img/profile-menu.png") left top no-repeat;
+    background-size: 100%;
+}
+
+.s-pic {
+    padding: 12px;
+}
+
+.s-pic > img {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    border: 3px solid rgba(0,0,0,.14);
+    box-sizing: content-box;
+}
+
+
+.s-info {
+    background: rgba(0,0,0,.37);
+    padding: 7px 14px;
+    color: #fff;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+
+.mainmenu {
+    margin-top: 20px;
+}
+
+.sidemenu {
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    padding: 9px 5px 9px 30px;
+    background-color: white;
+}
+
+.mainmenu:last-child {
+    margin-bottom: 30px;
+}
+
+.sidemenu {
+    color: #4C4C4C;
+}
+
+
+.sidemenu:hover {
+    cursor: pointer;
+    background-color: #f7f7f7;
+
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.sidemenu > i {
+    color: #4C4C4C;
+    -webkit-transform: translateY(5px) scale(0.8);
+    padding-right: 20px;
+}
+
+.footerheader {
+    font-size: 12px;
+    padding: 20px;
+}
+
+.startingcontainer {
+    font-family: "Roboto Light", sans-serif;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 150px 0px 20px 0px;
+}
+
+.hubheader {
+    font-family: "Roboto Light", sans-serif;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0px 0px 20px 0px;
+}
+
+
+.bodysubheader {
+    padding-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+hr {
+    border-color: #e3e3e3;
+}
+
+.active {
+    background-color: #f7f7f7;
+}
+
+.bodytitle {
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+input::-webkit-input-placeholder {
+    font-family: 'roboto', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+input {
+    margin: 40px 25px;
+    width: 200px;
+    display: block;
+    border: none;
+    padding: 10px 0;
+    border-bottom: solid 1px whitesmoke;
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #2196F3 4%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #2196F3 4%);
+    background-position: -200px 0;
+    background-size: 200px 100%;
+    background-repeat: no-repeat;
+    color: #0e6252;
+}
+input:focus, input:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+}
+input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+    color: #2196F3;
+    font-size: 11px;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    visibility: visible !important;
+}
+
+/**/
+.hubcontainer {
+    color: black;
+    margin-top: 100px;
+}
+
+
+.pagetitle {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.sidebar.right {
+    -webkit-box-shadow: -18px 0px 23px -23px rgba(0,0,0,0.19);
+
+}
+
+.sidebar.left {
+    -webkit-box-shadow: 24px 0px 10px -23px rgba(0,0,0,0.06);
+
+}

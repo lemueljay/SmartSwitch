@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script type="text/javascript" src="plugins/jquery/jquery-3.2.0.js"></script>
+
+    <link rel="stylesheet" href="test.css">
+
+    <link rel="stylesheet" href="bower_components/please-wait/build/please-wait.css">
+
+    <title></title>
+</head>
+<body>
+
+    <div class="inner">
+        asdas
+    </div>
+
+
+    <script type="text/javascript" src="bower_components/please-wait/build/please-wait.js"></script>
+    <script type="text/javascript">
+        window.loading_screen = window.pleaseWait({
+            logo: "img/splash.png",
+            backgroundColor: 'white',
+            loadingHtml: "<div class='sk-folding-cube'>" +
+                    "<div class='sk-cube1 sk-cube'></div>" +
+            "<div class='sk-cube2 sk-cube'></div>" +
+            "<div class='sk-cube4 sk-cube'></div>" +
+            "<div class='sk-cube3 sk-cube'></div>" +
+            "</div>"
+        });
+    </script>
+
+</body>
+
+
+</html>

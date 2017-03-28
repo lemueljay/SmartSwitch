@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Jquery -->
+    <script type="text/javascript" src="../static/plugins/jquery/jquery-3.2.0.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../static/plugins/boostrap/css/bootstrap.css">
+    <script type="text/javascript" src="../static/plugins/boostrap/js/bootstrap.js"></script>
+    <!-- SemanticUI -->
+    <link rel="stylesheet" href="../static/plugins/semantic/dist/semantic.css">
+    <script type="text/javascript" src="../static/plugins/semantic/dist/semantic.js"></script>
+    <!-- Please-wait plugin (page loader). -->
+    <link rel="stylesheet" href="../static/plugins/please-wait/pageloader.css">
+    <link rel="stylesheet" href="../static/plugins/please-wait/build/please-wait.css">
+    <script type="text/javascript" src="../static/plugins/please-wait/build/please-wait.js"></script>
+    <!-- Sidebar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sidebar/3.3.2/jquery.sidebar.min.js"></script>
+    <!-- Custom. -->
+    <link rel="stylesheet" href="../static/css/index.css">
+    <script type="text/javascript" src="../static/js/index.js"></script>
+    <title>Dashboard</title>
+
+</head>
+
+<body class="inner">
+
+
+<script type="text/javascript">
+    window.loading_screen = window.pleaseWait({
+        logo: "../static/img/splash.png",
+        backgroundColor: 'white',
+        loadingHtml: "<div class='sk-folding-cube'>" +
+        "<div class='sk-cube1 sk-cube'></div>" +
+        "<div class='sk-cube2 sk-cube'></div>" +
+        "<div class='sk-cube4 sk-cube'></div>" +
+        "<div class='sk-cube3 sk-cube'></div>" +
+        "</div>"
+    }).finish();
+</script>
+
+<!-- Modals -->
+
+<div class="modal fade getstartedmodal" tabindex="-1" role="dialog" aria-labelledby="getstartedmodal">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            GET STARTED
+        </div>
+    </div>
+</div>
+
+
+<div class="sidebar left" style="z-index: 999; position: fixed;">
+    <div class="s-profile">
+        <div class="profile">
+            <div class="s-pic">
+                <img src="../static/img/1.jpg">
+            </div>
+            <div class="s-info">
+                Lemuel Jay Vallinas
+            </div>
+        </div>
+    </div>
+    <div class="mainmenu">
+        <a href="index.html"><div class="sidemenu active"><i class="material-icons">home</i>Home</div></a>
+        <a href="hubs.html"><div class="sidemenu"><i class="material-icons">device_hub</i>Hubs</div></a>
+        <a href="devices.html"><div class="sidemenu"><i class="material-icons">devices</i>Devices</div></a>
+        <a href="rooms.html"><div class="sidemenu"><i class="material-icons">room</i>Rooms</div></a>
+        <a href="scenes.html"><div class="sidemenu"><i class="material-icons">play_circle_filled</i>Scenes</div></a>
+        <a href="schedule.html"><div class="sidemenu"><i class="material-icons">schedule</i>Schedule</div></a>
+    </div>
+</div>
+
+
+<div class="sidebar right row" style="z-index: 999; position: fixed;">
+    <form class="col-xs-12">
+        <div class="input-group">
+            <input type="text" required="required" placeholder="Search">
+        </div>
+    </form>
+    <div class="col-xs-12 task">
+        <div class="col-xs-2 taskleft"><img class="taskimg" src="../static/img/1.jpg"></div>
+        <div class="col-xs-10 taskbody">
+            <div class="taskheading">David Belle</div>
+            <div class="tasktext">Cum sociis natoque penatibus et magnis dis parturient montes</div>
+        </div>
+    </div>
+    <div class="col-xs-12 task">
+        <div class="col-xs-2 taskleft"><img class="taskimg" src="../static/img/2.jpg"></div>
+        <div class="col-xs-10 taskbody">
+            <div class="taskheading">Jonathan Morris</div>
+            <div class="tasktext">Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</div>
+        </div>
+    </div>
+    <div class="col-xs-12 task">
+        <div class="col-xs-2 taskleft"><img class="taskimg" src="../static/img/3.jpg"></div>
+        <div class="col-xs-10 taskbody">
+            <div class="taskheading">Fredric Mitchell Jr.</div>
+            <div class="tasktext">Phasellus a ante et est ornare accumsan at vel magnauis blandit turpis at augue ultricies</div>
+        </div>
+    </div>
+    <div class="col-xs-12 task">
+        <div class="col-xs-2 taskleft"><img class="taskimg" src="../static/img/4.jpg"></div>
+        <div class="col-xs-10 taskbody">
+            <div class="taskheading">Glenn Jecobs</div>
+            <div class="tasktext">Ut vitae lacus sem ellentesque maximus, nunc sit amet varius dignissim, dui est consectetur neque</div>
+        </div>
+    </div>
+</div>
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+
+            <a class="navbar-brand"><i id="toggle-sidebar" class="material-icons">view_headline</i>LEMME SWITCH</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a><i class="material-icons">search</i></a></li>
+                <li><a><i id="nav-inbox" class="material-icons">message</i><span class="badge">6</span></a></li>
+                <li><a><i id="nav-notif" class="material-icons">notifications</i><span class="badge">9</span></a></li>
+                <li><a><i id="nav-tasks" class="material-icons">list</i><span class="badge">2</span></a></li>
+                <li><a><i id="nav-settings" class="material-icons">more_vert</i></a></li>
+                <li><a><i id="nav-chat" class="material-icons">chat</i></a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<div class="container-fluid">
+    <div class="row bodycontent">
+        <div class="startingcontainer sectioncontainer text-center">
+            <hr>
+            Welcome, <span class="namer">Lemuel Jay!</span>
+            <div class="bodysubheader">Take the tour and start automating your home!</div>
+            <button class="ui button purple" data-toggle="modal" data-target=".getstartedmodal">GET STARTED</button>
+            <hr>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
