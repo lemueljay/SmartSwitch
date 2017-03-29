@@ -77,7 +77,7 @@
 <div class="sidebar right row" style="z-index: 999; position: fixed;">
     <form class="col-xs-12">
         <div class="input-group">
-            <input type="text" required="required" placeholder="Search">
+            <input id="chatsearch" type="text" required="required" placeholder="Search">
         </div>
     </form>
     <div class="col-xs-12 task">
@@ -141,30 +141,34 @@
         <div class="startingcontainer sectioncontainer text-center">
             <form class="ui form col-xs-4">
                 <div class="field">
-                    <label>HUB CODE</label>
+                    <label class="text-left">HUB CODE</label>
                     <input class="input">
                 </div>
                 <button class="ui green button" type="submit">CONNECT HUB</button>
             </form>
             <form class="ui form col-xs-4">
                 <div class="field">
-                    <label>HUB CODE</label>
+                    <label class="text-left">HUB CODE</label>
                     <input class="input">
                 </div>
                 <button class="ui red button" type="submit">DISCONNECT HUB</button>
             </form>
-            <table class="ui celled table col-xs-6">
-                <thead>
-                    <tr>
-                        <th>HUB CODE</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>12931289</td>
-                    </tr>
-                </tbody>
-            </table>
+            <hr>
+            <div class="col-xs-8">
+                <table class="ui celled table">
+                    <thead>
+                        <tr>
+                            <th>HUB CODE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12931289</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
     </div>
 </div>

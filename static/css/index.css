@@ -292,12 +292,12 @@ hr {
     font-size: 15px;
 }
 
-input::-webkit-input-placeholder {
+#chatsearch::-webkit-input-placeholder {
     font-family: 'roboto', sans-serif;
     transition: all 0.3s ease-in-out;
 }
 
-input {
+#chatsearch {
     margin: 40px 25px;
     width: 200px;
     display: block;
@@ -313,12 +313,12 @@ input {
     background-repeat: no-repeat;
     color: #0e6252;
 }
-input:focus, input:valid {
+#chatsearch:focus, #chatsearch:valid {
     box-shadow: none;
     outline: none;
     background-position: 0 0;
 }
-input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+#chatsearch:focus::-webkit-input-placeholder, #chatsearch:valid::-webkit-input-placeholder {
     color: #2196F3;
     font-size: 11px;
     -webkit-transform: translateY(-20px);
