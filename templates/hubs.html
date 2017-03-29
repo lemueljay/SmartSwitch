@@ -64,8 +64,8 @@
         </div>
     </div>
     <div class="mainmenu">
-        <a><div class="sidemenu active"><i class="material-icons">home</i>Home</div></a>
-        <a href="hubs.html"><div class="sidemenu"><i class="material-icons">device_hub</i>Hubs</div></a>
+        <a><div class="sidemenu"><i class="material-icons">home</i>Home</div></a>
+        <a href="hubs.html"><div class="sidemenu active"><i class="material-icons">device_hub</i>Hubs</div></a>
         <a href="devices.html"><div class="sidemenu"><i class="material-icons">devices</i>Devices</div></a>
         <a href="rooms.html"><div class="sidemenu"><i class="material-icons">room</i>Rooms</div></a>
         <a href="scenes.html"><div class="sidemenu"><i class="material-icons">play_circle_filled</i>Scenes</div></a>
@@ -139,11 +139,32 @@
 <div class="container-fluid">
     <div class="row bodycontent">
         <div class="startingcontainer sectioncontainer text-center">
-            <hr>
-            Welcome, <span class="namer">Lemuel Jaya Vallinas!</span>
-            <div class="bodysubheader">Take the tour and start automating your home!</div>
-            <button class="ui button purple" data-toggle="modal" data-target=".getstartedmodal">GET STARTED</button>
-            <hr>
+            <form class="ui form col-xs-4">
+                <div class="field">
+                    <label>HUB CODE</label>
+                    <input class="input">
+                </div>
+                <button class="ui green button" type="submit">CONNECT HUB</button>
+            </form>
+            <form class="ui form col-xs-4">
+                <div class="field">
+                    <label>HUB CODE</label>
+                    <input class="input">
+                </div>
+                <button class="ui red button" type="submit">DISCONNECT HUB</button>
+            </form>
+            <table class="ui celled table col-xs-6">
+                <thead>
+                    <tr>
+                        <th>HUB CODE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12931289</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
