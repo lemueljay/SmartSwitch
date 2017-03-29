@@ -1,5 +1,6 @@
 from flask import Flask, request, redirect,render_template, url_for
 from flask_login import LoginManager
+
 import flask_login
 from werkzeug.security import generate_password_hash, check_password_hash
 import sqlite3
@@ -26,9 +27,6 @@ class User(flask_login.UserMixin):
 
 @login_manager.user_loader
 def user_loader(cuser):
-    #if cuser != usern: #query ni dapita i search sa db kung naa bay ga exist
-    #    return
-
     user = User()
     user.id = cuser
     return user
@@ -41,8 +39,22 @@ def auth():
 
     if request.method == 'POST':
         username = request.form['username']
+        password = request.form['password']
 
-        if request.form['password'] == passw and username == usern:
+        con = sqlite3.connect("smart.sqlite")
+        con.row_factory = sqlite3.Row
+
+        cur = con.cursor()
+        cur.execute("SELECT password FROM users WHERE username = ?",[username])
+
+        rows = [row[0] for row in cur.fetchall()]
+        cur.close()
+
+        passhash = rows[0].encode('utf-8')
+
+        print passhash
+
+        if check_password_hash(passhash, password):
             user = User()
             user.id = username
             flask_login.login_user(user)
