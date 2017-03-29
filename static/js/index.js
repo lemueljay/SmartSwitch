@@ -63,35 +63,35 @@ $(document).ready(function() {
         '<div class="col-xs-12 text-center">MESSAGES<hr></div>' +
         '<div class="col-xs-12 notifbar">' +
         '   <div class="col-xs-12 notif">' +
-        '       <div class="col-xs-2 notifleft"><img class="notifimg" src="../img/1.jpg"></div>' +
+        '       <div class="col-xs-2 notifleft"><img class="notifimg" src="../static/img/1.jpg"></div>' +
         '       <div class="col-xs-10 notifbody">' +
-        '           <div class="notiffheading">David Belle</div>' +
+        '           <div class="notiffheading">Lemuel Jay</div>' +
         '           <div class="notiftext">Cum sociis natoque penatibus et magnis dis parturient montes</div>' +
         '       </div>' +
         '   </div>' +
         '   <div class="col-xs-12 task">' +
-        '       <div class="col-xs-2 taskleft"><img class="taskimg" src="../img/2.jpg"></div>' +
+        '       <div class="col-xs-2 taskleft"><img class="taskimg" src="../static/img/2.jpg"></div>' +
         '       <div class="col-xs-10 taskbody">' +
         '           <div class="taskheading">Jonathan Morris</div>' +
         '           <div class="tasktext">Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</div>' +
         '       </div>' +
         '   </div>' +
         '   <div class="col-xs-12 task">' +
-        '       <div class="col-xs-2 taskleft"><img class="taskimg" src="../img/3.jpg"></div>' +
+        '       <div class="col-xs-2 taskleft"><img class="taskimg" src="../static/img/3.jpg"></div>' +
         '       <div class="col-xs-10 taskbody">' +
         '           <div class="taskheading">Fredric Mitchell Jr.</div>' +
         '           <div class="tasktext">Phasellus a ante et est ornare accumsan at vel magnauis blandit turpis at augue ultricies</div>' +
         '       </div>' +
         '   </div>' +
         '   <div class="col-xs-12 task">' +
-        '       <div class="col-xs-2 taskleft"><img class="taskimg" src="../img/4.jpg"></div>' +
+        '       <div class="col-xs-2 taskleft"><img class="taskimg" src="../static/img/4.jpg"></div>' +
         '       <div class="col-xs-10 taskbody">' +
         '           <div class="taskheading">Glenn Jecobs</div>' +
         '           <div class="tasktext">Ut vitae lacus sem ellentesque maximus, nunc sit amet varius dignissim, dui est consectetur neque</div>' +
         '       </div>' +
         '   </div>' +
         '   <div class="col-xs-12 task">' +
-        '       <div class="col-xs-2 taskleft"><img class="taskimg" src="../img/4.jpg"></div>' +
+        '       <div class="col-xs-2 taskleft"><img class="taskimg" src="../static/img/4.jpg"></div>' +
         '       <div class="col-xs-10 taskbody">' +
         '           <div class="taskheading">Bill Phillips</div>' +
         '           <div class="tasktext">Proin laoreet commodo eros id faucibus. Donec ligula quam, imperdiet vel ante placerat</div>' +
@@ -114,35 +114,35 @@ $(document).ready(function() {
         '<div class="col-xs-12 text-center">NOTIFICATION <i id="markallread" class="material-icons popup-icons pull-right">playlist_add_check</i><hr></div>' +
         '<div class="col-xs-12 notifbar">' +
         '   <div class="col-xs-12 notif">' +
-        '       <div class="col-xs-2 notifleft"><img class="notifimg" src="../img/1.jpg"></div>' +
+        '       <div class="col-xs-2 notifleft"><img class="notifimg" src="../static/img/1.jpg"></div>' +
         '       <div class="col-xs-10 notifbody">' +
         '           <div class="notiffheading">David Belle</div>' +
         '           <div class="notiftext">Cum sociis natoque penatibus et magnis dis parturient montes</div>' +
         '       </div>' +
         '   </div>' +
         '   <div class="col-xs-12 task">' +
-        '       <div class="col-xs-2 taskleft"><img class="taskimg" src="img/2.jpg"></div>' +
+        '       <div class="col-xs-2 taskleft"><img class="taskimg" src="../static/img/2.jpg"></div>' +
         '       <div class="col-xs-10 taskbody">' +
         '           <div class="taskheading">Jonathan Morris</div>' +
         '           <div class="tasktext">Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</div>' +
         '       </div>' +
         '   </div>' +
         '   <div class="col-xs-12 task">' +
-        '       <div class="col-xs-2 taskleft"><img class="taskimg" src="img/3.jpg"></div>' +
+        '       <div class="col-xs-2 taskleft"><img class="taskimg" src="../static/img/3.jpg"></div>' +
         '       <div class="col-xs-10 taskbody">' +
         '           <div class="taskheading">Fredric Mitchell Jr.</div>' +
         '           <div class="tasktext">Phasellus a ante et est ornare accumsan at vel magnauis blandit turpis at augue ultricies</div>' +
         '       </div>' +
         '   </div>' +
         '   <div class="col-xs-12 task">' +
-        '       <div class="col-xs-2 taskleft"><img class="taskimg" src="img/4.jpg"></div>' +
+        '       <div class="col-xs-2 taskleft"><img class="taskimg" src="../static/img/4.jpg"></div>' +
         '       <div class="col-xs-10 taskbody">' +
         '           <div class="taskheading">Glenn Jecobs</div>' +
         '           <div class="tasktext">Ut vitae lacus sem ellentesque maximus, nunc sit amet varius dignissim, dui est consectetur neque</div>' +
         '       </div>' +
         '   </div>' +
         '   <div class="col-xs-12 task">' +
-        '       <div class="col-xs-2 taskleft"><img class="taskimg" src="img/4.jpg"></div>' +
+        '       <div class="col-xs-2 taskleft"><img class="taskimg" src="../static/img/4.jpg"></div>' +
         '       <div class="col-xs-10 taskbody">' +
         '           <div class="taskheading">Bill Phillips</div>' +
         '           <div class="tasktext">Proin laoreet commodo eros id faucibus. Donec ligula quam, imperdiet vel ante placerat</div>' +
@@ -167,14 +167,14 @@ $(document).ready(function() {
         '<div class="col-xs-12 text-center">TASKS<hr></div>' +
         '<div class="col-xs-12 notifbar">' +
         '   <div class="col-xs-12 notif">' +
-        '       <div class="col-xs-2 notifleft"><img class="notifimg" src="img/1.jpg"></div>' +
+        '       <div class="col-xs-2 notifleft"><img class="notifimg" src="../static/img/1.jpg"></div>' +
         '       <div class="col-xs-10 notifbody">' +
         '           <div class="notiffheading">David Belle</div>' +
         '           <div class="notiftext">Cum sociis natoque penatibus et magnis dis parturient montes</div>' +
         '       </div>' +
         '   </div>' +
         '   <div class="col-xs-12 task">' +
-        '       <div class="col-xs-2 taskleft"><img class="taskimg" src="img/2.jpg"></div>' +
+        '       <div class="col-xs-2 taskleft"><img class="taskimg" src="../static/img/2.jpg"></div>' +
         '       <div class="col-xs-10 taskbody">' +
         '           <div class="taskheading">Jonathan Morris</div>' +
         '           <div class="tasktext">Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</div>' +
