@@ -33,12 +33,16 @@ def user_loader(cuser):
 
 
 
-@app.route('/auth', methods=['GET', 'POST'])
-def auth():
-    error = None
+#ROUTER
 
-    if request.method == 'POST':
-        username = request.form['username']
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+	if request.method == 'GET':
+		return render_template('login.html')
+		
+	if request.method == 'POST':
+		error = None
+		username = request.form['username']
         password = request.form['password']
 
         con = sqlite3.connect("smart.sqlite")
@@ -59,15 +63,9 @@ def auth():
             user.id = username
             flask_login.login_user(user)
             return redirect(url_for('dash'))
-    error = 'MISMATCHED'
-    return error
+	error = "MISMATCHED"
+	return error
 
-
-#ROUTER
-
-@app.route('/login')
-def login():
-    return render_template('login.html')
 
 @app.route('/logout')
 def logout():
