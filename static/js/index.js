@@ -200,7 +200,7 @@ $(document).ready(function() {
         '<div class="col-xs-12 setting"><i class="material-icons">settings</i> Other Settings</div>' +
         '<div class="col-xs-12 setting"><i class="material-icons">event_seat</i> Getting Started</div>' +
         '<div class="col-xs-12 setting"><i class="material-icons">code</i> Developer\'s Section</div>' +
-        '<div class="col-xs-12 text-center popoverfootbar setting">SIGN OUT</div>' +
+        '<div class="col-xs-12 text-center popoverfootbar setting"><a href="/logout">SIGN OUT</a></div>' +
         '</div>'
     });
 
