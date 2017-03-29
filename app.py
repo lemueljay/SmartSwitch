@@ -22,6 +22,7 @@ login_manager.login_view = 'login'
 usern = "admin"
 passw = "1234"
 
+
 class User(flask_login.UserMixin):
     pass
 
@@ -37,11 +38,12 @@ def user_loader(cuser):
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    error = None
+
     if request.method == 'GET':
-        return render_template('login.html')
+        return render_template('login.html', error=error)
 
     if request.method == 'POST':
-        error = None
         username = request.form['username']
         password = request.form['password']
 
@@ -55,12 +57,12 @@ def login():
             rows = [row[0] for row in cur.fetchall()]
             cur.close()
         except Exception as e:
-            error = "QUERY ERROR!"
-            return error
+            error = "USERNAME/PASSWORD DID NOT MATCH."
+            return render_template('login.html', error=error)
 
         if len(rows) == 0:
             error = "USERNAME/PASSWORD DID NOT MATCH."
-            return error
+            return render_template('login.html', error=error)
 
         passhash = rows[0].encode('utf-8')
 
@@ -73,7 +75,8 @@ def login():
             return redirect(url_for('dash'))
 
     error = "USERNAME/PASSWORD DID NOT MATCH."
-    return error
+    return render_template('login.html', error=error)
+
 
 
 @app.route('/logout')
