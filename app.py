@@ -37,22 +37,30 @@ def user_loader(cuser):
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-	if request.method == 'GET':
-		return render_template('login.html')
-		
-	if request.method == 'POST':
-		error = None
-		username = request.form['username']
+    if request.method == 'GET':
+        return render_template('login.html')
+
+    if request.method == 'POST':
+        error = None
+        username = request.form['username']
         password = request.form['password']
 
         con = sqlite3.connect("smart.sqlite")
         con.row_factory = sqlite3.Row
 
         cur = con.cursor()
-        cur.execute("SELECT password FROM users WHERE username = ?",[username])
+        cur.execute("SELECT password FROM users WHERE username = ?", [username])
 
-        rows = [row[0] for row in cur.fetchall()]
-        cur.close()
+        try:
+            rows = [row[0] for row in cur.fetchall()]
+            cur.close()
+        except Exception as e:
+            error = "QUERY ERROR!"
+            return error
+
+        if len(rows) == 0:
+            error = "USERNAME/PASSWORD DID NOT MATCH."
+            return error
 
         passhash = rows[0].encode('utf-8')
 
@@ -63,8 +71,9 @@ def login():
             user.id = username
             flask_login.login_user(user)
             return redirect(url_for('dash'))
-	error = "MISMATCHED"
-	return error
+
+    error = "USERNAME/PASSWORD DID NOT MATCH."
+    return error
 
 
 @app.route('/logout')
@@ -74,28 +83,27 @@ def logout():
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
-	if request.method == 'GET':
-		return render_template('sign-up.html')
-	
-	if request.method == 'POST':
-		fname = request.form['firstname']
-		lname = request.form['lastname']
-		username = request.form['username']
-		password = request.form['password']
+    if request.method == 'GET':
+        return render_template('sign-up.html')
 
-		hash_pass = generate_password_hash(password, method='sha256')
+    if request.method == 'POST':
+        fname = request.form['firstname']
+        lname = request.form['lastname']
+        username = request.form['username']
+        password = request.form['password']
 
+        hash_pass = generate_password_hash(password, method='sha256')
 
-		with sqlite3.connect("smart.sqlite") as con:
-			cur = con.cursor()
-			cur.execute('INSERT INTO users (username,password,firstname,lastname) VALUES (?,?,?,?)',(username,hash_pass,fname,lname))
-			con.commit()
+        with sqlite3.connect("smart.sqlite") as con:
+            cur = con.cursor()
+            cur.execute('INSERT INTO users (username,password,firstname,lastname) VALUES (?,?,?,?)',(username,hash_pass,fname,lname))
+            con.commit()
 
-			user = User()
-			user.id = username
-			flask_login.login_user(user)
+            user = User()
+            user.id = username
+            flask_login.login_user(user)
 
-		return redirect(url_for('dash'))
+        return redirect(url_for('dash'))
 
 
 @app.route('/')
