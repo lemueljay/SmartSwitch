@@ -197,16 +197,16 @@ $(document).ready(function() {
         '<div class="col-xs-12 text-center">SETTINGS<hr></div>' +
         '<div class="col-xs-12 setting" onclick="toggleFullScreen()"><i class="material-icons">fullscreen</i> Toggle Fullscreen</div>' +
         '<div class="col-xs-12 setting"><i class="material-icons">fingerprint</i> Privacy Settings</div>' +
-        '<div class="col-xs-12 setting"><i class="material-icons">settings</i> Other Settings</div>' +
+        '<div class="col-xs-12 setting" data-toggle="modal" data-target=".connecthubmodal"><i class="material-icons">device_hub</i> Hub Settings</div>' +
         '<div class="col-xs-12 setting"><i class="material-icons">event_seat</i> Getting Started</div>' +
         '<div class="col-xs-12 setting"><i class="material-icons">code</i> Developer\'s Section</div>' +
         '<div class="col-xs-12 text-center popoverfootbar setting"><a href="/logout">SIGN OUT</a></div>' +
         '</div>'
     });
 
-    $('#nav-chat').popup({
-
-    });
+    $('.connecthubmodal').on('show.bs.modal', function() {
+        $('#nav-settings').popup('hide');
+    })
 
     /*
     * Toggle sidebar

@@ -348,3 +348,41 @@ hr {
     -webkit-box-shadow: 24px 0px 10px -23px rgba(0,0,0,0.06);
 
 }
+
+.modal-content {
+    color: black;
+}
+
+
+.modaltitle {
+    background-color: #2e2e2e;
+    color: #f5f5f5;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.modalleft, .modalright {
+    padding: 0px;
+    border-right: 0.25px solid rgba(0, 0, 0, 0.1);
+    height: 400px;
+}
+
+.modalleftoption {
+    font-size: 12px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modalleftoption:hover {
+    background-color: #f3f3f3;
+}
+
+.modalright > form {
+    padding: 20px;
+}
+
+.modalright > form > div {
+    margin-bottom: 10px;
+}

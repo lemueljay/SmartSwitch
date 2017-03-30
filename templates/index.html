@@ -27,7 +27,7 @@
 
 <body class="inner">
 
-
+<!--
 <script type="text/javascript">
     window.loading_screen = window.pleaseWait({
         logo: "../static/img/splash.png",
@@ -40,7 +40,7 @@
         "</div>"
     }).finish();
 </script>
-
+-->
 <!-- Modals -->
 
 <div class="modal fade getstartedmodal" tabindex="-1" role="dialog" aria-labelledby="getstartedmodal">
@@ -50,6 +50,34 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade connecthubmodal" tabindex="-1" role="dialog" aria-labelledby="connecthubmodal">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content row">
+            <div class="modaltitle col-xs-12">
+                HUB SETTINGS
+            </div>
+            <div class="col-xs-3 modalleft">
+                <div class="modalleftoption active">Connect Hub</div>
+
+                <div class="modalleftoption">About</div>
+            </div>
+            <div class="col-xs-9 modalright">
+
+                <form class="ui form text-center">
+                    <div class="text-left">
+                        <label>Hub Code:</label>
+                        <input type="text" name="hubcode">
+                    </div>
+                    <button class="ui teal button form-control">CONNECT</button>
+                </form>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 
 <div class="sidebar left" style="z-index: 999; position: fixed;">
