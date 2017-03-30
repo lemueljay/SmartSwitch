@@ -19,8 +19,8 @@ app.jinja_env
 login_manager.init_app(app)
 login_manager.login_view = 'login'
 
-usern = "admin"
-passw = "1234"
+
+cuser = []
 
 
 class User(flask_login.UserMixin):
@@ -39,6 +39,7 @@ def user_loader(cuser):
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     error = None
+    passhash = None
 
     if request.method == 'GET':
         return render_template('login.html', error=error)
@@ -51,11 +52,14 @@ def login():
         con.row_factory = sqlite3.Row
 
         cur = con.cursor()
-        cur.execute("SELECT password FROM users WHERE username = ?", [username])
+        cur.execute("SELECT ROWID, * FROM users WHERE username = ?", [username])
 
         try:
-            rows = [row[0] for row in cur.fetchall()]
+            rows = [row for row in cur.fetchall()]
+            print rows[0][1]
             cur.close()
+            cuser.append({'id': rows[0][0], 'username': rows[0][1], 'fname': rows[0][3], 'lname': rows[0][4]})
+            passhash = rows[0][2]
         except Exception as e:
             error = "USERNAME/PASSWORD DID NOT MATCH."
             return render_template('login.html', error=error)
@@ -64,9 +68,12 @@ def login():
             error = "USERNAME/PASSWORD DID NOT MATCH."
             return render_template('login.html', error=error)
 
-        passhash = rows[0].encode('utf-8')
+
+
+        passhash = passhash.encode('utf-8')
 
         print passhash
+
 
         if check_password_hash(passhash, password):
             user = User()
@@ -112,7 +119,8 @@ def signup():
 @app.route('/')
 @flask_login.login_required
 def dash():
-    return render_template('index.html')
+    data = cuser
+    return render_template('index.html' , data = data)
 
 if __name__ == '__main__':
     app.run()
