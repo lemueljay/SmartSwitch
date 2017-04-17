@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d537f09-4759-4740-a804-31d4c060c262" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart.sqlite" afterPath="$PROJECT_DIR$/smart.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/index.css" afterPath="$PROJECT_DIR$/static/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -32,23 +34,24 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.2454212" vertical-offset="831" max-vertical-offset="2244">
-              <caret line="121" column="12" selection-start-line="121" selection-start-column="12" selection-end-line="121" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.325" vertical-offset="2176" max-vertical-offset="2873">
+              <caret line="141" column="36" selection-start-line="141" selection-start-column="36" selection-end-line="141" selection-end-column="36" />
               <folding>
                 <element signature="e#0#67#0" expanded="true" />
-                <marker date="1490896186588" expanded="true" signature="1030:1075" placeholder="SELECT ROWID..users..." />
-                <marker date="1490896186588" expanded="true" signature="2650:2723" placeholder="INSERT INTO ..." />
-                <marker date="1490896186588" expanded="true" signature="2923:2924" placeholder="..." />
+                <marker date="1492435227383" expanded="true" signature="1058:1103" placeholder="SELECT ROWID..users..." />
+                <marker date="1492435227383" expanded="true" signature="2677:2750" placeholder="INSERT INTO ..." />
+                <marker date="1492435227383" expanded="true" signature="2841:2886" placeholder="SELECT ROWID..users..." />
+                <marker date="1492435227383" expanded="true" signature="3416:3417" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hubs.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/hubs.html">
+      <file leaf-file-name="ajax.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/ajax.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.807693" vertical-offset="2304" max-vertical-offset="3111">
-              <caret line="149" column="33" selection-start-line="149" selection-start-column="28" selection-end-line="149" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -57,9 +60,13 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.346154" vertical-offset="2629" max-vertical-offset="3179">
-              <caret line="172" column="124" selection-start-line="172" selection-start-column="124" selection-end-line="172" selection-end-column="124" />
-              <folding />
+            <state vertical-scroll-proportion="-3.357143" vertical-offset="942" max-vertical-offset="3332">
+              <caret line="72" column="41" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="41" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#form#1;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,8 +74,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6122" max-vertical-offset="6681">
-              <caret line="387" column="0" selection-start-line="387" selection-start-column="0" selection-end-line="387" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="5848" max-vertical-offset="6681">
+              <caret line="357" column="29" selection-start-line="357" selection-start-column="23" selection-end-line="357" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -94,18 +101,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2958" max-vertical-offset="4029">
-              <caret line="199" column="102" selection-start-line="199" selection-start-column="102" selection-end-line="199" selection-end-column="102" />
-              <folding>
-                <marker date="1490888268447" expanded="true" signature="9767:9848" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -119,8 +114,9 @@
         <option value="$PROJECT_DIR$/templates/hubs.html" />
         <option value="$PROJECT_DIR$/static/js/index.js" />
         <option value="$PROJECT_DIR$/static/css/index.css" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/js/ajax.js" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
@@ -134,8 +130,9 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="width" value="1378" />
-    <option name="height" value="744" />
+    <option name="y" value="-8" />
+    <option name="width" value="1552" />
+    <option name="height" value="840" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -203,6 +200,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartSwitch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartSwitch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -472,11 +487,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1378" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1552" height="840" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16312595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16689008" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -520,19 +535,15 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/hubs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2304" max-vertical-offset="3111">
-          <caret line="149" column="33" selection-start-line="149" selection-start-column="28" selection-end-line="149" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3162">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#1;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -564,9 +575,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2958" max-vertical-offset="4029">
           <caret line="199" column="102" selection-start-line="199" selection-start-column="102" selection-end-line="199" selection-end-column="102" />
-          <folding>
-            <marker date="1490888268447" expanded="true" signature="9767:9848" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -576,9 +585,10 @@
           <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding>
             <element signature="e#0#67#0" expanded="true" />
-            <marker date="1490896186588" expanded="true" signature="1030:1075" placeholder="SELECT ROWID..users..." />
-            <marker date="1490896186588" expanded="true" signature="2650:2723" placeholder="INSERT INTO ..." />
-            <marker date="1490896186588" expanded="true" signature="2923:2924" placeholder="..." />
+            <marker date="1492435227383" expanded="true" signature="1058:1103" placeholder="SELECT ROWID..users..." />
+            <marker date="1492435227383" expanded="true" signature="2677:2750" placeholder="INSERT INTO ..." />
+            <marker date="1492435227383" expanded="true" signature="2841:2886" placeholder="SELECT ROWID..users..." />
+            <marker date="1492435227383" expanded="true" signature="3416:3417" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -595,7 +605,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2771">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#1;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -627,9 +641,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2958" max-vertical-offset="4029">
           <caret line="199" column="102" selection-start-line="199" selection-start-column="102" selection-end-line="199" selection-end-column="102" />
-          <folding>
-            <marker date="1490888268447" expanded="true" signature="9767:9848" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -639,9 +651,10 @@
           <caret line="113" column="11" selection-start-line="113" selection-start-column="11" selection-end-line="113" selection-end-column="11" />
           <folding>
             <element signature="e#0#67#0" expanded="true" />
-            <marker date="1490896186588" expanded="true" signature="1030:1075" placeholder="SELECT ROWID..users..." />
-            <marker date="1490896186588" expanded="true" signature="2650:2723" placeholder="INSERT INTO ..." />
-            <marker date="1490896186588" expanded="true" signature="2923:2924" placeholder="..." />
+            <marker date="1492435227383" expanded="true" signature="1058:1103" placeholder="SELECT ROWID..users..." />
+            <marker date="1492435227383" expanded="true" signature="2677:2750" placeholder="INSERT INTO ..." />
+            <marker date="1492435227383" expanded="true" signature="2841:2886" placeholder="SELECT ROWID..users..." />
+            <marker date="1492435227383" expanded="true" signature="3416:3417" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -658,7 +671,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3060">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#1;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -690,9 +707,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2958" max-vertical-offset="4029">
           <caret line="199" column="127" selection-start-line="199" selection-start-column="127" selection-end-line="199" selection-end-column="127" />
-          <folding>
-            <marker date="1490888268447" expanded="true" signature="9767:9848" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -702,9 +717,10 @@
           <caret line="113" column="11" selection-start-line="113" selection-start-column="11" selection-end-line="113" selection-end-column="11" />
           <folding>
             <element signature="e#0#67#0" expanded="true" />
-            <marker date="1490896186588" expanded="true" signature="1030:1075" placeholder="SELECT ROWID..users..." />
-            <marker date="1490896186588" expanded="true" signature="2650:2723" placeholder="INSERT INTO ..." />
-            <marker date="1490896186588" expanded="true" signature="2923:2924" placeholder="..." />
+            <marker date="1492435227383" expanded="true" signature="1058:1103" placeholder="SELECT ROWID..users..." />
+            <marker date="1492435227383" expanded="true" signature="2677:2750" placeholder="INSERT INTO ..." />
+            <marker date="1492435227383" expanded="true" signature="2841:2886" placeholder="SELECT ROWID..users..." />
+            <marker date="1492435227383" expanded="true" signature="3416:3417" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -721,7 +737,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1216" max-vertical-offset="2686">
           <caret line="79" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="152" selection-end-column="7" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#1;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -753,9 +773,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1683" max-vertical-offset="4029">
           <caret line="72" column="74" selection-start-line="72" selection-start-column="74" selection-end-line="72" selection-end-column="74" />
-          <folding>
-            <marker date="1490888268447" expanded="true" signature="9767:9848" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -765,9 +783,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#67#0" expanded="true" />
-            <marker date="1490896186588" expanded="true" signature="1030:1075" placeholder="SELECT ROWID..users..." />
-            <marker date="1490896186588" expanded="true" signature="2650:2723" placeholder="INSERT INTO ..." />
-            <marker date="1490896186588" expanded="true" signature="2923:2924" placeholder="..." />
+            <marker date="1492435227383" expanded="true" signature="1058:1103" placeholder="SELECT ROWID..users..." />
+            <marker date="1492435227383" expanded="true" signature="2677:2750" placeholder="INSERT INTO ..." />
+            <marker date="1492435227383" expanded="true" signature="2841:2886" placeholder="SELECT ROWID..users..." />
+            <marker date="1492435227383" expanded="true" signature="3416:3417" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -776,7 +795,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1969" max-vertical-offset="2686">
           <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#1;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -792,9 +815,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1683" max-vertical-offset="4029">
           <caret line="72" column="74" selection-start-line="72" selection-start-column="74" selection-end-line="72" selection-end-column="74" />
-          <folding>
-            <marker date="1490888268447" expanded="true" signature="9767:9848" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -804,9 +825,10 @@
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#0#67#0" expanded="true" />
-            <marker date="1490896186588" expanded="true" signature="1030:1075" placeholder="SELECT ROWID..users..." />
-            <marker date="1490896186588" expanded="true" signature="2650:2723" placeholder="INSERT INTO ..." />
-            <marker date="1490896186588" expanded="true" signature="2923:2924" placeholder="..." />
+            <marker date="1492435227383" expanded="true" signature="1058:1103" placeholder="SELECT ROWID..users..." />
+            <marker date="1492435227383" expanded="true" signature="2677:2750" placeholder="INSERT INTO ..." />
+            <marker date="1492435227383" expanded="true" signature="2841:2886" placeholder="SELECT ROWID..users..." />
+            <marker date="1492435227383" expanded="true" signature="3416:3417" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -815,7 +837,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2669">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#1;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -831,9 +857,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1683" max-vertical-offset="4029">
           <caret line="72" column="74" selection-start-line="72" selection-start-column="74" selection-end-line="72" selection-end-column="74" />
-          <folding>
-            <marker date="1490888268447" expanded="true" signature="9767:9848" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -843,9 +867,10 @@
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#0#67#0" expanded="true" />
-            <marker date="1490896186588" expanded="true" signature="1030:1075" placeholder="SELECT ROWID..users..." />
-            <marker date="1490896186588" expanded="true" signature="2650:2723" placeholder="INSERT INTO ..." />
-            <marker date="1490896186588" expanded="true" signature="2923:2924" placeholder="..." />
+            <marker date="1492435227383" expanded="true" signature="1058:1103" placeholder="SELECT ROWID..users..." />
+            <marker date="1492435227383" expanded="true" signature="2677:2750" placeholder="INSERT INTO ..." />
+            <marker date="1492435227383" expanded="true" signature="2841:2886" placeholder="SELECT ROWID..users..." />
+            <marker date="1492435227383" expanded="true" signature="3416:3417" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -861,7 +886,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2635" max-vertical-offset="2771">
           <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#1;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -879,9 +908,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#67#0" expanded="true" />
-            <marker date="1490896186588" expanded="true" signature="1030:1075" placeholder="SELECT ROWID..users..." />
-            <marker date="1490896186588" expanded="true" signature="2650:2723" placeholder="INSERT INTO ..." />
-            <marker date="1490896186588" expanded="true" signature="2923:2924" placeholder="..." />
+            <marker date="1492435227383" expanded="true" signature="1058:1103" placeholder="SELECT ROWID..users..." />
+            <marker date="1492435227383" expanded="true" signature="2677:2750" placeholder="INSERT INTO ..." />
+            <marker date="1492435227383" expanded="true" signature="2841:2886" placeholder="SELECT ROWID..users..." />
+            <marker date="1492435227383" expanded="true" signature="3416:3417" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -897,7 +927,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#1;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -920,9 +954,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2958" max-vertical-offset="4029">
           <caret line="199" column="102" selection-start-line="199" selection-start-column="102" selection-end-line="199" selection-end-column="102" />
-          <folding>
-            <marker date="1490888268447" expanded="true" signature="9767:9848" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -942,39 +974,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/index.css">
+    <entry file="file://$PROJECT_DIR$/templates/hubs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6579" max-vertical-offset="6681">
-          <caret line="387" column="0" selection-start-line="387" selection-start-column="0" selection-end-line="387" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3501529" vertical-offset="2304" max-vertical-offset="3111">
+          <caret line="149" column="33" selection-start-line="149" selection-start-column="28" selection-end-line="149" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/hubs.html">
+    <entry file="file://$PROJECT_DIR$/static/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.807693" vertical-offset="2304" max-vertical-offset="3111">
-          <caret line="149" column="33" selection-start-line="149" selection-start-column="28" selection-end-line="149" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="5848" max-vertical-offset="6681">
+          <caret line="357" column="29" selection-start-line="357" selection-start-column="23" selection-end-line="357" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.346154" vertical-offset="2629" max-vertical-offset="3179">
-          <caret line="172" column="124" selection-start-line="172" selection-start-column="124" selection-end-line="172" selection-end-column="124" />
+        <state vertical-scroll-proportion="-3.357143" vertical-offset="942" max-vertical-offset="3332">
+          <caret line="72" column="41" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#1;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.2454212" vertical-offset="831" max-vertical-offset="2244">
-          <caret line="121" column="12" selection-start-line="121" selection-start-column="12" selection-end-line="121" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.325" vertical-offset="2176" max-vertical-offset="2873">
+          <caret line="141" column="36" selection-start-line="141" selection-start-column="36" selection-end-line="141" selection-end-column="36" />
           <folding>
             <element signature="e#0#67#0" expanded="true" />
-            <marker date="1490896186588" expanded="true" signature="1030:1075" placeholder="SELECT ROWID..users..." />
-            <marker date="1490896186588" expanded="true" signature="2650:2723" placeholder="INSERT INTO ..." />
-            <marker date="1490896186588" expanded="true" signature="2923:2924" placeholder="..." />
+            <marker date="1492435227383" expanded="true" signature="1058:1103" placeholder="SELECT ROWID..users..." />
+            <marker date="1492435227383" expanded="true" signature="2677:2750" placeholder="INSERT INTO ..." />
+            <marker date="1492435227383" expanded="true" signature="2841:2886" placeholder="SELECT ROWID..users..." />
+            <marker date="1492435227383" expanded="true" signature="3416:3417" placeholder="..." />
           </folding>
         </state>
       </provider>

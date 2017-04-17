@@ -20,6 +20,7 @@
     <!-- Custom. -->
     <link rel="stylesheet" href="../static/css/index.css">
     <script type="text/javascript" src="../static/js/index.js"></script>
+    <script type="text/javascript" src="../static/js/ajax.js"></script>
 
     <title>Dashboard</title>
 
@@ -58,20 +59,28 @@
                 HUB SETTINGS
             </div>
             <div class="col-xs-3 modalleft">
-                <div class="modalleftoption active">Connect Hub</div>
+                <div class="modalleftoption active">Hub</div>
 
                 <div class="modalleftoption">About</div>
             </div>
             <div class="col-xs-9 modalright">
-
-                <form class="ui form text-center">
+                <form id="connecthubform" class="ui form text-center">
                     <div class="text-left">
+                        <input type="hidden" name="userid" value="{{ data[0].id }}">
                         <label>Hub Code:</label>
                         <input type="text" name="hubcode">
                     </div>
-                    <button class="ui teal button form-control">CONNECT</button>
+                    <div id="hubcodealert" class="hidden alert alert-danger" role="alert">Invalid hubcode.</div>
+                    <button id="connecthubbtn" type="button" class="ui teal button form-control">CONNECT</button>
+
                 </form>
-               
+               <form class="hidden" id="connectedhubform">
+                    <div class="text-left">
+                        <label>Hub Code:</label>
+                        <div id="hubcodetitle" style="font-size: 16px; color: green; font-weight: bolder; text-transform: uppercase">hubcode001</div>
+                    </div>
+                     <button id="disconnecthubbtn" type="button" class="ui red button form-control">DISCONNECT</button>
+               </form>
             </div>
         </div>
     </div>
@@ -168,9 +177,9 @@
     <div class="row bodycontent">
         <div class="startingcontainer sectioncontainer text-center">
             <hr>
-            Welcome, <span class="namer">Lemuel Jaya Vallinas!</span>
+            Welcome, <span class="namer">{{ data[0].fname }}!</span>
             <div class="bodysubheader">Take the tour and start automating your home!</div>
-            <button class="ui button purple" data-toggle="modal" data-target=".getstartedmodal">GET STARTED {{ data[0].fname }}</button>
+            <button class="ui button purple" data-toggle="modal" data-target=".getstartedmodal">GET STARTED</button>
             <hr>
         </div>
     </div>

@@ -5,6 +5,9 @@ import flask_login
 from werkzeug.security import generate_password_hash, check_password_hash
 import sqlite3
 
+from flask import jsonify
+
+
 app = Flask(__name__)
 app.secret_key = 'supermario'
 
@@ -74,7 +77,6 @@ def login():
 
         print passhash
 
-
         if check_password_hash(passhash, password):
             user = User()
             user.id = username
@@ -106,8 +108,15 @@ def signup():
 
         with sqlite3.connect("smart.sqlite") as con:
             cur = con.cursor()
-            cur.execute('INSERT INTO users (username,password,firstname,lastname) VALUES (?,?,?,?)',(username,hash_pass,fname,lname))
+            cur.execute('INSERT INTO users (username,password,firstname,lastname) VALUES (?,?,?,?)', (username, hash_pass, fname, lname))
             con.commit()
+
+            cur.execute("SELECT ROWID, * FROM users WHERE username = ?", [username])
+            rows = [row for row in cur.fetchall()]
+            print rows[0][1]
+            cur.close()
+            cuser.append({'id': rows[0][0], 'username': rows[0][1], 'fname': rows[0][3], 'lname': rows[0][4]})
+            passhash = rows[0][2]
 
             user = User()
             user.id = username
@@ -120,7 +129,35 @@ def signup():
 @flask_login.login_required
 def dash():
     data = cuser
-    return render_template('index.html' , data = data)
+    return render_template('index.html', data=data)
+
+@app.route('/connecthub', methods=['GET', 'POST'])
+def connecthub():
+    if request.method == 'GET':
+        return None
+    if request.method == 'POST':
+        userid = request.json['userid']
+        hubcode = request.json['hubcode']
+
+        # Check if hubcode is valid.
+        # Save the data.
+
+        return jsonify(userid=userid, hubcode=hubcode)
+
+@app.route('/disconnecthub', methods=['GET', 'POST'])
+def disconnecthub():
+    if request.method == 'GET':
+        return None
+    if request.method == 'POST':
+        userid = request.json['userid']
+        hubcode = request.json['hubcode']
+
+        # Delete data.
+
+        return 'Lemmeister'
 
 if __name__ == '__main__':
     app.run()
+
+
+
