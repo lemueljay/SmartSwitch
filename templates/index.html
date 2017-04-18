@@ -47,30 +47,29 @@
 -->
 <!-- Modals -->
 
-<div class="modal fade getstartedmodal" tabindex="-1" role="dialog" aria-labelledby="getstartedmodal" data-backdrop="static">
+<div  id="gettingstartedbaby" class="modal fade getstartedmodal" tabindex="-1" role="dialog" aria-labelledby="getstartedmodal">
     <div class="modal-dialog modal-lg" role="document">
         <div id="gettingstartedcontainer" class="modal-content row">
             <div class="col-xs-12 text-center">
                 Let's get you started!
             </div>
             <div class="col-xs-12 text-center">
-                <span class="">
+                <span id="gsform1" class="">
                     <div class="text-center">To get you started, enter your hubcode:</div>
                     <div class="ui input">
                       <input id="gettingstartedinputhub" type="text" placeholder="e.g. HUBCODExxxx">
                     </div>
-                    <button class="ui button">
+                    <button id="gsconnecthubbtn" class="ui button">
                       Connect
                     </button>
                 </span>
-                <span class="hidden">
+                <span id="gsform2" class="hidden">
                     <div class="ui active inverted dimmer">
                         <div class="ui text loader">Loading</div>
                     </div>
                 </span>
-                <span class="hidden">
-                    <div>Connected! Your hub is <strong>HUBCODE-54sk-29kd-25j4</strong></div>
-                    <button id="okaydone" class="ui teal button">Done</button>
+                <span id="gsform3" class="hidden">
+                    <div>Connected! Your hub is <strong id="hubtext">HUBCODE-54sk-29kd-25j4</strong></div>
                 </span>
             </div>
             <div class="col-xs-12 text-center">

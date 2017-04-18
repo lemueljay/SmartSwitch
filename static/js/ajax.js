@@ -43,4 +43,25 @@ $(document).ready(function() {
             }
         })
     })
+
+    $('#gsconnecthubbtn').click(function() {
+        $('#gsform1').addClass('hidden');
+        $('#gsform2').removeClass('hidden');
+        var userid = $("input[name='userid']").val()
+        var hubcode = $("#gettingstartedinputhub").val()
+        $.ajax({
+            type: 'POST',
+            url: '/connecthub',
+            data: JSON.stringify({'userid': userid, 'hubcode': hubcode}, null, '\t'),
+            contentType: 'application/json;charset=UTF-8',
+            success: function(data) {
+                $('#hubtext').text(data.hubcode)
+                $('#gsform3').removeClass('hidden');
+                $('#gsform2').addClass('hidden');
+            }
+        })
+    })
+
+
+
 })
