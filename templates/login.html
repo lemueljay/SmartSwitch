@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../static/plugins/semantic/dist/semantic.css">
     <script type="text/javascript" src="../static/plugins/semantic/dist/semantic.js"></script>
 
-    <link rel="stylesheet" href="../static/css/signin.css">
+    <link rel="stylesheet" href="../static/css/login.css">
     <script type="text/javascript" src="../static/js/signin.js"></script>
 
     <title>Login</title>
@@ -22,12 +22,11 @@
 <div class="container signup-box">
     <div class="row">
         <div class="col-xs-12 logo text-center">
-            <span class="">Admin</span>
-            <span class=""><strong>SmartSwitch</strong></span>
+            <div class="">SMART SWITCH</div>
+            <hr>
+            <div class="formheader">Sign in to manage your home.</div>
         </div>
         <div class="col-xs-push-4 col-xs-4 cardcontainer">
-            <div class="text-center formheader">Sign in to manage your home.</div>
-            <hr>
             <form class="ui form" action="/login" method="POST">
                 <div class="field">
                     <label>Username</label>
@@ -37,10 +36,12 @@
                     <label>Password</label>
                     <input type="password" name="password" placeholder="Password" value="{{request.form.password }}">
                 </div>
-                <button class="ui blue button" type="submit">Login</button>
-                <div class="ui error message"></div>
+                <button class="ui blue button form-control" type="submit">Login</button>
             </form>
-            MESSAGE: {{ error }}
+            {% if error == None %}
+            {% else %}
+                <div id="loginerrorbox" class="alert alert-danger text-center" role="alert">{{ error }}</div>
+            {% endif %}
         </div>
     </div>
 </div>

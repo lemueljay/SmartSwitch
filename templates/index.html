@@ -44,10 +44,32 @@
 -->
 <!-- Modals -->
 
-<div class="modal fade getstartedmodal" tabindex="-1" role="dialog" aria-labelledby="getstartedmodal">
+<div class="modal fade getstartedmodal" tabindex="-1" role="dialog" aria-labelledby="getstartedmodal" data-backdrop="static">
     <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            GET STARTED
+        <div id="gettingstartedcontainer" class="modal-content row">
+            <div class="col-xs-12">
+                Let's get you started!
+            </div>
+            <div class="col-xs-12 text-center">
+                <hr>
+                <span>
+                    <div class="text-center">To get you started, enter your hubcode:</div>
+                    <div class="ui input">
+                      <input id="gettingstartedinputhub" type="text" placeholder="e.g. HUBCODExxxx">
+                    </div>
+                    <button class="ui button">
+                      Connect
+                    </button>
+                </span>
+                <span class="hidden">
+                    <div class="ui active inverted dimmer">
+                        <div class="ui text loader">Loading</div>
+                    </div>
+                </span>
+            </div>
+            <div class="col-xs-12 text-center">
+
+            </div>
         </div>
     </div>
 </div>
@@ -102,7 +124,7 @@
     </div>
     <div class="mainmenu">
         <a><div class="sidemenu active"><i class="material-icons">home</i>Home</div></a>
-        <a href="hubs.html"><div class="sidemenu"><i class="material-icons">device_hub</i>Hubs</div></a>
+        <a href="hubs.html"><div class="hidden sidemenu"><i class="material-icons">device_hub</i>Hubs</div></a>
         <a href="devices.html"><div class="sidemenu"><i class="material-icons">devices</i>Devices</div></a>
         <a href="rooms.html"><div class="sidemenu"><i class="material-icons">room</i>Rooms</div></a>
         <a href="scenes.html"><div class="sidemenu"><i class="material-icons">play_circle_filled</i>Scenes</div></a>

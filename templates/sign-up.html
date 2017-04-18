@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../static/plugins/semantic/dist/semantic.css">
     <script type="text/javascript" src="../static/plugins/semantic/dist/semantic.js"></script>
 
-    <link rel="stylesheet" href="../static/css/sign-up.css">
+    <link rel="stylesheet" href="../static/css/login.css">
     <script type="text/javascript" src="../static/js/sign-up.js"></script>
 
     <title>Sign Up</title>
@@ -22,12 +22,11 @@
 <div class="container signup-box">
     <div class="row">
         <div class="col-xs-12 logo text-center">
-            <span class="">Admin</span>
-            <span class=""><strong>SmartSwitch</strong></span>
+            <div class="">SMART SWITCH</div>
+            <hr>
+            <div class="formheader">Register to start controlling your home.</div>
         </div>
         <div class="col-xs-push-4 col-xs-4 cardcontainer">
-            <div class="text-center formheader">Register a new membership.</div>
-            <hr>
             <form class="ui form" action="/signup" method="POST">
                 <div class="field">
                     <label>First Name</label>
@@ -45,7 +44,7 @@
                     <label>Password</label>
                     <input type="password" name="password" placeholder="Password">
                 </div>
-                <button class="ui blue button" type="submit">Submit</button>
+                <button class="ui blue button form-control" type="submit">Submit</button>
                 <div class="ui error message"></div>
             </form>
         </div>

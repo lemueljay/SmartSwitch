@@ -13,15 +13,11 @@ app.secret_key = 'supermario'
 
 login_manager = LoginManager()
 
-
 app.static_folder = 'static'
 app.jinja_env
 
-
-
 login_manager.init_app(app)
 login_manager.login_view = 'login'
-
 
 cuser = []
 
@@ -34,8 +30,6 @@ def user_loader(cuser):
     user = User()
     user.id = cuser
     return user
-
-
 
 #ROUTER
 
@@ -64,11 +58,11 @@ def login():
             cuser.append({'id': rows[0][0], 'username': rows[0][1], 'fname': rows[0][3], 'lname': rows[0][4]})
             passhash = rows[0][2]
         except Exception as e:
-            error = "USERNAME/PASSWORD DID NOT MATCH."
+            error = "Username/password did not match."
             return render_template('login.html', error=error)
 
         if len(rows) == 0:
-            error = "USERNAME/PASSWORD DID NOT MATCH."
+            error = "Username/password did not match."
             return render_template('login.html', error=error)
 
 
@@ -83,7 +77,7 @@ def login():
             flask_login.login_user(user)
             return redirect(url_for('dash'))
 
-    error = "USERNAME/PASSWORD DID NOT MATCH."
+    error = "Username/password did not match."
     return render_template('login.html', error=error)
 
 

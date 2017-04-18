@@ -386,3 +386,25 @@ hr {
 .modalright > form > div {
     margin-bottom: 10px;
 }
+
+#gettingstartedcontainer > div:first-child {
+    font-size: 20px;
+    font-family: "Roboto Thin", sans-serif;
+    padding-top: 20px;
+}
+
+#gettingstartedcontainer > div:nth-child(2) {
+    font-size: 14px;
+    font-family: "Roboto Thin", sans-serif;
+    padding-bottom: 20px;
+}
+
+#gettingstartedcontainer > div:nth-child(3) {
+    font-size: 14px;
+    font-family: "Roboto Thin", sans-serif;
+    padding-bottom: 20px;
+}
+
+#gettingstartedinputhub {
+    margin-top: 20px;
+}
