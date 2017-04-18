@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect,render_template, url_for
+from flask import Flask, request, redirect, render_template, url_for
 from flask_login import LoginManager
 
 import flask_login
@@ -7,9 +7,13 @@ import sqlite3
 
 from flask import jsonify
 
+from flask_socketio import SocketIO, send, emit
+
+
 
 app = Flask(__name__)
 app.secret_key = 'supermario'
+socketio = SocketIO(app)
 
 login_manager = LoginManager()
 
@@ -150,8 +154,22 @@ def disconnecthub():
 
         return 'Lemmeister'
 
+
+@socketio.on('connect')
+def test_connect():
+    print('Client connected')
+
+@socketio.on('disconnect')
+def test_disconnect():
+    print('Client disconnected')
+
+@socketio.on('message')
+def handle_message(message):
+    print('received message: ' + message)
+
+
 if __name__ == '__main__':
-    app.run()
+    socketio.run(app)
 
 
 
