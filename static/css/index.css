@@ -390,21 +390,28 @@ hr {
 #gettingstartedcontainer > div:first-child {
     font-size: 20px;
     font-family: "Roboto Thin", sans-serif;
-    padding-top: 20px;
+    padding-top: 150px;
+    padding-bottom: 15px;
 }
 
 #gettingstartedcontainer > div:nth-child(2) {
     font-size: 14px;
     font-family: "Roboto Thin", sans-serif;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
 }
 
 #gettingstartedcontainer > div:nth-child(3) {
     font-size: 14px;
     font-family: "Roboto Thin", sans-serif;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
 }
 
+
+
 #gettingstartedinputhub {
+    margin-top: 20px;
+}
+
+#okaydone {
     margin-top: 20px;
 }
