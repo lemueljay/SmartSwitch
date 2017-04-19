@@ -8,26 +8,23 @@ var socket = io.connect('http://' + document.domain + ':' + location.port)
 $(document).ready(function() {
 
 
-    var hubcodehere = $('#hubcodehere').text()
-    console.log(hubcodehere)
-    socket.emit('check_hub_status', hubcodehere)
+    var hubcode = $('#hubcodehere').text()
+    socket.emit('check_hub_status', hubcode)
 
     $('#gsconnecthubbtn').click(function() {
-        var hubcode = $('#gettingstartedinputhub').val();
-        console.log(hubcode)
+        hubcode = $('#gettingstartedinputhub').val();
+        console.log("Submitted for checking: " + hubcode)
         socket.emit('check_hub_status', hubcode)
     })
 
 
     socket.on('hub_status', function(hub) {
-        var hubcode =$('#hubcodehere').text()
         console.log(hubcode)
-        console.log(hub.hubcode)
         if(hubcode === hub.hubcode) {
             if(hub.online) {
-                $('#hub_status').text('Online')
+                $('#hub_status').text('Online').addClass('online').removeClass('offline')
             } else {
-                $('#hub_status').text('Offline')
+                $('#hub_status').text('Offline').addClass('offline').removeClass('online')
             }
         } else {
             console.log('FALSE')

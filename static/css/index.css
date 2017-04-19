@@ -415,3 +415,24 @@ hr {
 #gsdisconnectbtn {
     margin-top: 20px;
 }
+
+/* HOME */
+
+#connectn {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+#hub_status {
+    font-family: "Roboto Black", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.online {
+    color: #21ba45;
+}
+
+.offline {
+    color: #d4d4d5;
+}

@@ -205,8 +205,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
 
-            <a class="navbar-brand"><i id="toggle-sidebar" class="material-icons">view_headline</i>LEMME SWITCH <span id="spanner">XYZ</span>
- </a>
+            <a class="navbar-brand"><i id="toggle-sidebar" class="material-icons">view_headline</i>LEMME SWITCH</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -227,11 +226,11 @@
 
 <div class="container-fluid">
     <div class="row bodycontent">
-
         {% if user.has_hub %}
         <div id="homeboard" class="startingcontainer sectioncontainer">
             <div id="connectn" class="col-xs-12">
                 CONNECTION STATUS: <span id="hub_status"></span><span id="hubcodehere" class="hidden">{{ user.hubcode }}</span>
+                <hr>
             </div>
         </div>
         <div id="gettingstartedboard" class="startingcontainer sectioncontainer text-center hidden">

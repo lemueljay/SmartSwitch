@@ -61,11 +61,13 @@ $(document).ready(function() {
                 $('#hubcodehere').text(data.hubcode)
                 $('#gsform3').removeClass('hidden');
                 $('#gsform2').addClass('hidden');
+                $("#gettingstartedinputhub").val('')
             }
         })
     })
 
     $('#gsdisconnectbtn').click(function() {
+        $("#gettingstartedinputhub").val('')
         $('#gettingstartedboard').removeClass('hidden')
         $('#homeboard').addClass('hidden')
         $('#gsform3').addClass('hidden')
