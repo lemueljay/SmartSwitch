@@ -15,13 +15,15 @@ app = Flask(__name__)
 app.secret_key = 'supermario'
 socketio = SocketIO(app)
 
+# Login manager.
 login_manager = LoginManager()
+login_manager.init_app(app)
+login_manager.login_view = 'login'
+
 
 app.static_folder = 'static'
 app.jinja_env
 
-login_manager.init_app(app)
-login_manager.login_view = 'login'
 
 cuser = []
 
@@ -35,7 +37,7 @@ def user_loader(cuser):
     user.id = cuser
     return user
 
-#ROUTER
+# ROUTER
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -89,6 +91,7 @@ def login():
 @app.route('/logout')
 def logout():
     flask_login.logout_user()
+    del cuser[:]
     return redirect(url_for('login'))
 
 @app.route('/signup', methods=['GET', 'POST'])
@@ -126,8 +129,21 @@ def signup():
 @app.route('/')
 @flask_login.login_required
 def dash():
-    data = cuser
-    return render_template('index.html', data=data)
+    user = cuser[0]
+
+    with sqlite3.connect("smart.sqlite") as con:
+        cur = con.cursor()
+        query = 'SELECT * FROM Hubcodes WHERE user_id = "' + str(user['id']) + '"'
+        cur.execute(query)
+        result = cur.fetchone()
+        if result is not None:
+            user['has_hub'] = True
+            user['hubcode'] = result[1]
+        else:
+            user['has_hub'] = False
+            user['hubcode'] = None
+
+    return render_template('index.html', user=user)
 
 @app.route('/connecthub', methods=['GET', 'POST'])
 def connecthub():
@@ -137,8 +153,11 @@ def connecthub():
         userid = request.json['userid']
         hubcode = request.json['hubcode']
 
-        # Check if hubcode is valid.
-        # Save the data.
+        with sqlite3.connect("smart.sqlite") as con:
+            cur = con.cursor()
+            cur.execute('INSERT INTO Hubcodes (hubcode, user_id) VALUES (?,?)', (hubcode, userid))
+            con.commit()
+            cur.close()
 
         return jsonify(userid=userid, hubcode=hubcode)
 
@@ -148,25 +167,65 @@ def disconnecthub():
         return None
     if request.method == 'POST':
         userid = request.json['userid']
-        hubcode = request.json['hubcode']
 
-        # Delete data.
+        with sqlite3.connect("smart.sqlite") as con:
+            cur = con.cursor()
+            cur.execute('DELETE FROM Hubcodes WHERE user_id = "' + userid + '"')
+            con.commit()
+            cur.close()
 
         return 'Lemmeister'
 
+# SOCKETS
 
-@socketio.on('connect')
-def test_connect():
-    print('Client connected')
+
+# Object that represents a socket connection
+
+
+
+hublist = []
+hubs = {}
+
+@socketio.on('hub_connect')
+def hub_connect(hubcode):
+    hubs[request.sid] = hubcode
+    hublist.append(hubcode)
+    print(hubcode + ' is now online.')
+    print(hublist)
+
+    data = {}
+    data['hubcode'] = hubcode
+    data['online'] = True
+    emit('hub_status', data, broadcast=True)
+
+
 
 @socketio.on('disconnect')
-def test_disconnect():
-    print('Client disconnected')
+def on_disconnect():
+    hubcode = hubs.get(request.sid)
+    if hubcode is not None:
+        hublist.remove(hubcode)
+        del hubs[request.sid]
+        print(hubcode + ' is now offline.')
+        print(hublist)
 
-@socketio.on('message')
-def handle_message(message):
-    print('received message: ' + message)
+        data = {}
+        data['hubcode'] = hubcode
+        data['online'] = False
+        emit('hub_status', data, broadcast=True)
 
+
+@socketio.on('check_hub_status')
+def status(hubcode):
+    data = {}
+    data['hubcode'] = hubcode
+    data['online'] = False
+    for hub in hublist:
+        if hub == hubcode:
+            data['online'] = True
+            break
+    print(data)
+    emit('hub_status', data, broadcast=True)
 
 if __name__ == '__main__':
     socketio.run(app)

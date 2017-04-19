@@ -45,6 +45,8 @@ $(document).ready(function() {
     })
 
     $('#gsconnecthubbtn').click(function() {
+        $('#gettingstartedboard').addClass('hidden')
+        $('#homeboard').removeClass('hidden')
         $('#gsform1').addClass('hidden');
         $('#gsform2').removeClass('hidden');
         var userid = $("input[name='userid']").val()
@@ -56,7 +58,28 @@ $(document).ready(function() {
             contentType: 'application/json;charset=UTF-8',
             success: function(data) {
                 $('#hubtext').text(data.hubcode)
+                $('#hubcodehere').text(data.hubcode)
                 $('#gsform3').removeClass('hidden');
+                $('#gsform2').addClass('hidden');
+            }
+        })
+    })
+
+    $('#gsdisconnectbtn').click(function() {
+        $('#gettingstartedboard').removeClass('hidden')
+        $('#homeboard').addClass('hidden')
+        $('#gsform3').addClass('hidden')
+        $('#gsform2').removeClass('hidden')
+        var userid = $("input[name='userid']").val()
+        $.ajax({
+            type: 'POST',
+            url: '/disconnecthub',
+            data: JSON.stringify({'userid': userid}, null, '\t'),
+            contentType: 'application/json;charset=UTF-8',
+            success: function(data) {
+                $('#hubtext').text()
+                $('#hubcodehere').text('')
+                $('#gsform1').removeClass('hidden');
                 $('#gsform2').addClass('hidden');
             }
         })

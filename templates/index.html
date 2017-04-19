@@ -53,6 +53,28 @@
             <div class="col-xs-12 text-center">
                 Let's get you started!
             </div>
+            {% if user.has_hub %}
+            <div class="col-xs-12 text-center">
+                <span id="gsform1" class="hidden">
+                    <div class="text-center">To get you started, enter your hubcode:</div>
+                    <div class="ui input">
+                      <input id="gettingstartedinputhub" type="text" placeholder="e.g. HUBCODExxxx">
+                    </div>
+                    <button id="gsconnecthubbtn" class="ui button">
+                      Connect
+                    </button>
+                </span>
+                <span id="gsform2" class="hidden">
+                    <div class="ui active inverted dimmer">
+                        <div class="ui text loader">Loading</div>
+                    </div>
+                </span>
+                <span id="gsform3" class="">
+                    <div>Connected! Your hub is <strong id="hubtext">{{ user.hubcode }}</strong></div>
+                    <button id="gsdisconnectbtn" class="ui red button">Disconnect</button>
+                </span>
+            </div>
+            {% else %}
             <div class="col-xs-12 text-center">
                 <span id="gsform1" class="">
                     <div class="text-center">To get you started, enter your hubcode:</div>
@@ -69,9 +91,11 @@
                     </div>
                 </span>
                 <span id="gsform3" class="hidden">
-                    <div>Connected! Your hub is <strong id="hubtext">HUBCODE-54sk-29kd-25j4</strong></div>
+                    <div>Connected! Your hub is <strong id="hubtext">{{ user.hubcode }}</strong></div>
+                    <button id="gsdisconnectbtn" class="ui red button">Disconnect</button>
                 </span>
             </div>
+            {% endif %}
             <div class="col-xs-12 text-center">
 
             </div>
@@ -93,7 +117,7 @@
             <div class="col-xs-9 modalright">
                 <form id="connecthubform" class="ui form text-center">
                     <div class="text-left">
-                        <input type="hidden" name="userid" value="{{ data[0].id }}">
+                        <input type="number" class="hidden" name="userid" value="{{ user.id }}">
                         <label>Hub Code:</label>
                         <input type="text" name="hubcode">
                     </div>
@@ -181,7 +205,8 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
 
-            <a class="navbar-brand"><i id="toggle-sidebar" class="material-icons">view_headline</i>LEMME SWITCH</a>
+            <a class="navbar-brand"><i id="toggle-sidebar" class="material-icons">view_headline</i>LEMME SWITCH <span id="spanner">XYZ</span>
+ </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -202,16 +227,36 @@
 
 <div class="container-fluid">
     <div class="row bodycontent">
-        <div class="startingcontainer sectioncontainer text-center">
+
+        {% if user.has_hub %}
+        <div id="homeboard" class="startingcontainer sectioncontainer">
+            <div id="connectn" class="col-xs-12">
+                CONNECTION STATUS: <span id="hub_status"></span><span id="hubcodehere" class="hidden">{{ user.hubcode }}</span>
+            </div>
+        </div>
+        <div id="gettingstartedboard" class="startingcontainer sectioncontainer text-center hidden">
             <hr>
-            Welcome, <span class="namer">{{ data[0].fname }}!</span>
+            Welcome, <span class="namer">{{ user.fname }}!</span>
             <div class="bodysubheader">Take the tour and start automating your home!</div>
             <button class="ui button purple" data-toggle="modal" data-target=".getstartedmodal">GET STARTED</button>
             <hr>
         </div>
+        {% else %}
+        <div id="homeboard" class="startingcontainer sectioncontainer hidden">
+            <div id="connectn" class="col-xs-12">
+                CONNECTION STATUS: <span id="hub_status"></span><span id="hubcodehere" class="hidden">{{ user.hubcode }}</span>
+            </div>
+        </div>
+        <div id="gettingstartedboard" class="startingcontainer sectioncontainer text-center">
+            <hr>
+            Welcome, <span class="namer">{{ user.fname }}!</span>
+            <div class="bodysubheader">Take the tour and start automating your home!</div>
+            <button class="ui button purple" data-toggle="modal" data-target=".getstartedmodal">GET STARTED</button>
+            <hr>
+        </div>
+        {% endif %}
     </div>
 </div>
-
 
 
 </body>
