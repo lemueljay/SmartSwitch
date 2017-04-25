@@ -18,9 +18,11 @@ from threading import Thread
 
 
 
+
 app = Flask(__name__)
 app.secret_key = 'supermario'
-socketio = SocketIO(app)
+socketio = SocketIO(app, async_mode='gevent', ping_timeout=30, logger=False, engineio_logger=False)
+
 
 # Login manager.
 login_manager = LoginManager()
@@ -52,6 +54,9 @@ def user_loader(cuser):
     user.fname = rows[0][3]
     user.lname = rows[0][4]
     return user
+
+
+
 
 # ROUTER
 
@@ -226,9 +231,6 @@ def switch():
         device_id = request.json['device_id']
         hubcode = request.json['hubcode']
         device_state = request.json['device_state']
-
-
-
         return 'Lemmeister'
 
 
@@ -299,7 +301,27 @@ def run_schedule():
 
 
 def job():
-    print("I am working...")
+    current_datetime = time.strftime("%Y-%m-%d") + ' ' + time.strftime("%H:%M:%S")
+    print(current_datetime)
+    with sqlite3.connect("smart.sqlite") as con:
+        cur = con.cursor()
+        query = "SELECT * FROM Devices WHERE schedule_datetime <= '%s" % current_datetime + "'"
+        cur.execute(query)
+        result = cur.fetchall()
+        cur.close()
+        if result is not None:
+            for res in result:
+                cur = con.cursor()
+                query = "UPDATE Devices SET schedule_datetime = null WHERE id = %s" % res[0]
+                cur.execute(query)
+                con.commit()
+                cur.close()
+                data = {}
+                data['device_id'] = res[0]
+                data['device_state'] =res[7]
+                data['hubcode'] = res[1]
+                print(data)
+                socketio.emit('hub_event_listener', data, broadcast=True)
 
 
 if __name__ == '__main__':
