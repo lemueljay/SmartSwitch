@@ -32,6 +32,20 @@ function init_device_toggleable() {
 
 $(document).ready(function() {
 
+    // TODO Scheduler calendar.
+    $('#example1').calendar({
+        ampm: false,
+        formatter: {
+            date: function (date, settings) {
+                if (!date) return '';
+                var day = date.getDate();
+                var month = date.getMonth() + 1;
+                var year = date.getFullYear();
+                return year + '/' + month + '/' + day;
+            }
+        }
+    });
+
     //  Disable switches if offline.
     init_device_toggleable()
     socket.on('device_toggleable', function(data) {

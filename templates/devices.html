@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../static/plugins/semantic-calendar/calendar.min.css">
+<script type="text/javascript" src="../static/plugins/semantic-calendar/calendar.min.js"></script>
 <script type="text/javascript" src="../static/js/devices.js"></script>
 
 
@@ -18,9 +20,36 @@
                     <label>OFF</label>
                     {% endif %}
                 </div>
+                <div class="extra content" style="margin-top:20px">
+                    <hr>
+                    <a style="font-size: 13px;" data-toggle="modal" data-target=".bs-example-modal-sm{{ value['id'] }}">
+                        <i style="color: #2196F3" class="add to calendar icon"></i>
+                        SCHEDULE (OFF)
+                    </a>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="modal fade bs-example-modal-sm{{ value['id'] }}" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div style="margin-top: 20px;" class="text-center">
+              <div style="font-size: 13px;" class="ui calendar text-center" id="example1">
+                <div class="ui input left icon">
+                  <i class="calendar icon"></i>
+                  <input type="text" placeholder="Date/Time">
+                </div>
+              </div>
+              <button style="font-size: 10px; margin-top: 20px;" class="ui teal button">SCHEDULE</button>
+              <br>
+              <button style="font-size: 10px; margin-top: 20px;" class="ui red button hidden">CANCEL</button>
+          </div>
+          <br/>
+        </div>
+      </div>
+    </div>
+
 {% endfor %}
 
 
