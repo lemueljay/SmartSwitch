@@ -13,21 +13,20 @@ $(document).ready(function() {
 
     $('#gsconnecthubbtn').click(function() {
         hubcode = $('#gettingstartedinputhub').val();
-        console.log("Submitted for checking: " + hubcode)
         socket.emit('check_hub_status', hubcode)
     })
 
 
     socket.on('hub_status', function(hub) {
-        console.log(hubcode)
         if(hubcode === hub.hubcode) {
             if(hub.online) {
-                $('#hub_status').text('Online').addClass('online').removeClass('offline')
+                $('.hub_status').text('Online').addClass('online').removeClass('offline')
+                $('#hub_statuser').text('Online')
             } else {
-                $('#hub_status').text('Offline').addClass('offline').removeClass('online')
+                $('.hub_status').text('Offline').addClass('offline').removeClass('online')
+                $('#hub_statuser').text('Offline')
             }
         } else {
-            console.log('FALSE')
         }
     })
 

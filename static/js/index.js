@@ -225,8 +225,21 @@ $(document).ready(function() {
         $(".sidebar.right").trigger("sidebar:toggle");
     })
 
+    $('.sidemenu').click(function() {
+        $('.sidemenu').each(function() {
+            $(this).removeClass('active')
+        })
 
+        $(this).addClass('active')
 
+        $('.bodycontent').addClass('hidden')
+        var toggleBody = $(this).attr("data-togglebody")
+        $('#' + toggleBody + 'section').removeClass('hidden')
+        switch(toggleBody) {
+            case 'devices':
+                $('.devices-list').load('/devices')
+        }
+    })
 
 
 })

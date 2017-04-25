@@ -25,6 +25,8 @@
     <script type="text/javascript" src="../static/js/index.js"></script>
     <script type="text/javascript" src="../static/js/ajax.js"></script>
 
+    <script type="text/javascript" src="../static/js/devices.js"></script>
+
     <title>Dashboard</title>
 
 </head>
@@ -138,7 +140,7 @@
 </div>
 
 
-
+<!-- SIDEBAR -->
 
 <div class="sidebar left" style="z-index: 999; position: fixed;">
     <div class="s-profile">
@@ -152,12 +154,12 @@
         </div>
     </div>
     <div class="mainmenu">
-        <a><div class="sidemenu active"><i class="material-icons">home</i>Home</div></a>
-        <a href="hubs.html"><div class="hidden sidemenu"><i class="material-icons">device_hub</i>Hubs</div></a>
-        <a href="devices.html"><div class="sidemenu"><i class="material-icons">devices</i>Devices</div></a>
-        <a href="rooms.html"><div class="sidemenu"><i class="material-icons">room</i>Rooms</div></a>
-        <a href="scenes.html"><div class="sidemenu"><i class="material-icons">play_circle_filled</i>Scenes</div></a>
-        <a href="schedule.html"><div class="sidemenu"><i class="material-icons">schedule</i>Schedule</div></a>
+        <a><div data-togglebody="home" id="sidemenu-home" class="sidemenu active"><i class="material-icons">home</i>Home</div></a>
+        <a><div data-togglebody="hubs" id="sidemenu-hubs" class="sidemenu"><i class="material-icons">device_hub</i>Hubs</div></a>
+        <a><div data-togglebody="devices" id="sidemenu-devices" class="sidemenu"><i class="material-icons">devices</i>Devices</div></a>
+        <a><div data-togglebody="rooms" id="sidemenu-rooms" class="sidemenu"><i class="material-icons">room</i>Rooms</div></a>
+        <a><div data-togglebody="scenes" id="sidemenu-scenes" class="sidemenu"><i class="material-icons">play_circle_filled</i>Scenes</div></a>
+        <a><div data-togglebody="schedule" id="sidemenu-schedule" class="sidemenu"><i class="material-icons">schedule</i>Schedule</div></a>
     </div>
 </div>
 
@@ -225,11 +227,12 @@
 
 
 <div class="container-fluid">
-    <div class="row bodycontent">
+    <div id="homesection" class="row bodycontent">
+    <span id="hub_statuser">Offline</span>
         {% if user.has_hub %}
         <div id="homeboard" class="startingcontainer sectioncontainer">
             <div id="connectn" class="col-xs-12">
-                CONNECTION STATUS: <span id="hub_status"></span><span id="hubcodehere" class="hidden">{{ user.hubcode }}</span>
+                CONNECTION STATUS: <span class="hub_status"></span><span id="hubcodehere" class="hidden">{{ user.hubcode }}</span>
                 <hr>
             </div>
         </div>
@@ -243,7 +246,7 @@
         {% else %}
         <div id="homeboard" class="startingcontainer sectioncontainer hidden">
             <div id="connectn" class="col-xs-12">
-                CONNECTION STATUS: <span id="hub_status"></span><span id="hubcodehere" class="hidden">{{ user.hubcode }}</span>
+                CONNECTION STATUS: <span class="hub_status"></span><span id="hubcodehere" class="hidden">{{ user.hubcode }}</span>
             </div>
         </div>
         <div id="gettingstartedboard" class="startingcontainer sectioncontainer text-center">
@@ -254,6 +257,17 @@
             <hr>
         </div>
         {% endif %}
+    </div>
+    <div id="devicessection" class="row bodycontent hidden">
+        <div class="startingcontainer sectioncontainer">
+             <div id="connectn" class="col-xs-12">
+                CONNECTION STATUS: <span class="hub_status" class="online">Online</span><span id="hubcodehere" class="hidden">{{ user.hubcode }}</span>
+                <hr>
+            </div>
+            <div class="devices-list">
+
+            </div>
+        </div>
     </div>
 </div>
 

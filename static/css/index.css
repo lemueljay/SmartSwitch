@@ -436,3 +436,13 @@ hr {
 .offline {
     color: #d4d4d5;
 }
+
+/* DEVICE SECIONT */
+
+.ui.cards > .card > .content > .header:not(.ui), .ui.card > .content > .header:not(.ui) {
+    font-size: 22px;
+}
+
+.ui.cards > .card .meta, .ui.card .meta {
+    font-size: 15px;
+}

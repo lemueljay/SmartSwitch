@@ -2,6 +2,8 @@ from flask import Flask, request, redirect, render_template, url_for
 from flask_login import LoginManager
 
 import flask_login
+from flask_login import LoginManager, login_user, current_user, login_required, logout_user
+
 from werkzeug.security import generate_password_hash, check_password_hash
 import sqlite3
 
@@ -34,7 +36,16 @@ class User(flask_login.UserMixin):
 @login_manager.user_loader
 def user_loader(cuser):
     user = User()
-    user.id = cuser
+    user.username = cuser
+    con = sqlite3.connect("smart.sqlite")
+    con.row_factory = sqlite3.Row
+    cur = con.cursor()
+    cur.execute("SELECT ROWID, * FROM users WHERE username = ?", [cuser])
+    rows = [row for row in cur.fetchall()]
+    cur.close()
+    user.id = rows[0][0]
+    user.fname = rows[0][3]
+    user.lname = rows[0][4]
     return user
 
 # ROUTER
@@ -59,7 +70,6 @@ def login():
 
         try:
             rows = [row for row in cur.fetchall()]
-            print rows[0][1]
             cur.close()
             cuser.append({'id': rows[0][0], 'username': rows[0][1], 'fname': rows[0][3], 'lname': rows[0][4]})
             passhash = rows[0][2]
@@ -75,7 +85,6 @@ def login():
 
         passhash = passhash.encode('utf-8')
 
-        print passhash
 
         if check_password_hash(passhash, password):
             user = User()
@@ -114,7 +123,6 @@ def signup():
 
             cur.execute("SELECT ROWID, * FROM users WHERE username = ?", [username])
             rows = [row for row in cur.fetchall()]
-            print rows[0][1]
             cur.close()
             cuser.append({'id': rows[0][0], 'username': rows[0][1], 'fname': rows[0][3], 'lname': rows[0][4]})
             passhash = rows[0][2]
@@ -175,6 +183,38 @@ def disconnecthub():
             cur.close()
 
         return 'Lemmeister'
+
+@app.route('/devices', methods=['GET'])
+def get_devices():
+    if request.method == 'GET':
+        devices = {}
+        with sqlite3.connect("smart.sqlite") as con:
+            cur = con.cursor()
+            query = 'SELECT * FROM Hubcodes WHERE user_id = "' + str(current_user.id) + '"'
+            cur.execute(query)
+            result = cur.fetchone()
+            if result is not None:
+                hubcode = result[1]
+                query = 'SELECT * FROM Devices WHERE hubcode = "' + str(hubcode) + '"'
+                cur.execute(query)
+                result = cur.fetchall()
+                counter = 0;
+                if result is not None:
+                    for res in result:
+                        devices[str(counter)] = {}
+                        devices[str(counter)]['id'] = res[0]
+                        devices[str(counter)]['hubcode'] = res[1]
+                        devices[str(counter)]['date_added'] = res[2]
+                        devices[str(counter)]['device_name'] = res[3]
+                        devices[str(counter)]['device_room'] = res[4]
+                        devices[str(counter)]['device_state'] = res[5]
+                        counter = counter + 1
+                else:
+                    devices = None
+            else:
+                devices = None
+            return render_template('devices.html', devices=devices)
+
 
 # SOCKETS
 
