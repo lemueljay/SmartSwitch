@@ -11,7 +11,7 @@
                 </div>
                 <div class="ui toggle checkbox">
                     {% if value['device_state'] == 'true' %}
-                    <input checked type="checkbox" name="public">
+                    <input checked class="togglebtn" type="checkbox" name="t{{ value['id'] }}">
                     <label>ON</label>
                     {% else %}
                     <input class="togglebtn" type="checkbox" name="t{{ value['id'] }}" >

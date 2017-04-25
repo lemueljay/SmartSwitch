@@ -247,6 +247,7 @@ def hub_connect(hubcode):
     data = {}
     data['hubcode'] = hubcode
     data['online'] = True
+    emit('device_toggleable', data, broadcast=True)
     emit('hub_status', data, broadcast=True)
 
 
@@ -263,6 +264,7 @@ def on_disconnect():
         data = {}
         data['hubcode'] = hubcode
         data['online'] = False
+        emit('device_toggleable', data, broadcast=True)
         emit('hub_status', data, broadcast=True)
 
 
@@ -276,6 +278,7 @@ def status(hubcode):
             data['online'] = True
             break
     print(data)
+    emit('device_toggleable', data, broadcast=True)
     emit('hub_status', data, broadcast=True)
 
 
