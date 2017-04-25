@@ -218,6 +218,8 @@ def get_devices():
                         devices[str(counter)]['device_name'] = res[3]
                         devices[str(counter)]['device_room'] = res[4]
                         devices[str(counter)]['device_state'] = res[5]
+                        devices[str(counter)]['schedule_datetime'] = res[6]
+                        devices[str(counter)]['schedule_state'] = res[7]
                         counter = counter + 1
                 else:
                     devices = None
@@ -233,6 +235,33 @@ def switch():
         device_state = request.json['device_state']
         return 'Lemmeister'
 
+
+@app.route('/schedule', methods=['GET', 'POST'])
+def scheduler_datetime():
+    if request.method == 'POST':
+        data = {}
+        schedule_datetime = request.json['schedule_datetime']
+        device_id = request.json['device_id']
+        schedule_status = request.json['schedule_status']
+        with sqlite3.connect("smart.sqlite") as con:
+            cur = con.cursor()
+            query = "UPDATE Devices SET schedule_datetime = '%s" % schedule_datetime + "', schedule_state = '%s" % schedule_status + "' WHERE id = %s" % device_id
+            cur.execute(query)
+            con.commit()
+            cur.close()
+        return "Lemmeister"
+
+@app.route('/unschedule', methods=['GET', 'POST'])
+def unscheduler_datetime():
+    if request.method == 'POST':
+        device_id = request.json['device_id']
+        with sqlite3.connect("smart.sqlite") as con:
+            cur = con.cursor()
+            query = "UPDATE Devices SET schedule_datetime = null WHERE id = %s" % device_id
+            cur.execute(query)
+            con.commit()
+            cur.close()
+        return "Lemmeister"
 
 # SOCKETS
 
@@ -302,7 +331,6 @@ def run_schedule():
 
 def job():
     current_datetime = time.strftime("%Y-%m-%d") + ' ' + time.strftime("%H:%M:%S")
-    print(current_datetime)
     with sqlite3.connect("smart.sqlite") as con:
         cur = con.cursor()
         query = "SELECT * FROM Devices WHERE schedule_datetime <= '%s" % current_datetime + "'"
@@ -320,7 +348,6 @@ def job():
                 data['device_id'] = res[0]
                 data['device_state'] =res[7]
                 data['hubcode'] = res[1]
-                print(data)
                 socketio.emit('hub_event_listener', data, broadcast=True)
 
 

@@ -5,6 +5,70 @@
 
 var socket = io.connect('http://' + document.domain + ':' + location.port)
 
+function schedule_device(device_id) {
+    var schedule_datetime = $('#datetimeschedule' + device_id).val() + ':00'
+    var sdt = schedule_datetime.split(/[ ,]+/)
+    var sdate = sdt[0];
+    var stime = sdt[1];
+    sdate = sdate.split(/[-,]+/)
+    var syear = sdate[0];
+    var smonth  = sdate[1];
+    if(smonth.length < 2) {
+        smonth = '0' + smonth
+    }
+    var sday = sdate[2];
+    if(sday.length < 2) {
+        sday = '0' + sday
+    }
+    sdate = syear + '-' + smonth + '-' + sday
+    stime = stime.split(/[:,]+/)
+    var shour = stime[0]
+    var smin = stime[1]
+    var sec = stime[2]
+    if(shour.length < 2) {
+        shour = '0' + shour
+    }
+    if(smin.length < 2) {
+        smin = '0' + smin
+    }
+    stime = shour + ':' + smin + ':' + sec
+    schedule_datetime = sdate + ' ' + stime
+    var device_id = device_id
+    var schedule_status
+    if($('#statusschedule' + device_id).is(':checked')) {
+        schedule_status = 'on'
+    } else {
+        schedule_status = 'off'
+    }
+    console.log(schedule_datetime)
+    $.ajax({
+        type: 'POST',
+        url: '/schedule',
+        data: JSON.stringify({'schedule_datetime': schedule_datetime, 'device_id': device_id, 'schedule_status': schedule_status}, null, '\t'),
+        contentType: 'application/json;charset=UTF-8',
+        success: function(data) {
+            $('#cancelschedulebtn' + device_id).removeClass('hidden')
+            $('#schedulebtn' + device_id).addClass('hidden')
+            $('#schedbox' + device_id).addClass('hidden')
+        }
+    })
+}
+
+function unschedule_device(device_id) {
+    var device_id = device_id
+    $.ajax({
+        type: 'POST',
+        url: '/unschedule',
+        data: JSON.stringify({'device_id': device_id}, null, '\t'),
+        contentType: 'application/json;charset=UTF-8',
+        success: function(data) {
+            $('#cancelschedulebtn' + device_id).addClass('hidden')
+            $('#schedulebtn' + device_id).removeClass('hidden')
+            $('#schedbox' + device_id).removeClass('hidden')
+            $('#datetimeschedule' + device_id).val(null)
+        }
+    })
+}
 
 function device_toggleable(data) {
     var hubcode = $('#hubcodehere').text();
@@ -33,7 +97,7 @@ function init_device_toggleable() {
 $(document).ready(function() {
 
     // TODO Scheduler calendar.
-    $('#example1').calendar({
+    $('.examplecalendar').calendar({
         ampm: false,
         formatter: {
             date: function (date, settings) {
@@ -41,8 +105,8 @@ $(document).ready(function() {
                 var day = date.getDate();
                 var month = date.getMonth() + 1;
                 var year = date.getFullYear();
-                return year + '/' + month + '/' + day;
-            }
+                return year + '-' + month + '-' + day;
+            },
         }
     });
 

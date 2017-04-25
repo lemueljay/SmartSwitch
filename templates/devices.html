@@ -24,7 +24,7 @@
                     <hr>
                     <a style="font-size: 13px;" data-toggle="modal" data-target=".bs-example-modal-sm{{ value['id'] }}">
                         <i style="color: #2196F3" class="add to calendar icon"></i>
-                        SCHEDULE (OFF)
+                        SCHEDULE
                     </a>
                 </div>
             </div>
@@ -35,15 +35,37 @@
       <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
           <div style="margin-top: 20px;" class="text-center">
-              <div style="font-size: 13px;" class="ui calendar text-center" id="example1">
+              <div style="font-size: 13px;" class="ui calendar text-center examplecalendar">
                 <div class="ui input left icon">
                   <i class="calendar icon"></i>
-                  <input type="text" placeholder="Date/Time">
+                  <input id="datetimeschedule{{ value['id'] }}" type="text" placeholder="Date/Time" value="{{ value['schedule_datetime'] }}">
                 </div>
               </div>
-              <button style="font-size: 10px; margin-top: 20px;" class="ui teal button">SCHEDULE</button>
+              {% if value['schedule_datetime'] %}
+                  <div id="schedbox{{ value['id'] }}" class="ui slider checkbox hidden">
+                  {% if value['schedule_state'] == 'on' %}
+                    <input checked id="statusschedule{{ value['id'] }}" type="checkbox">
+                  {% else %}
+                      <input id="statusschedule{{ value['id'] }}" type="checkbox">
+                  {% endif %}
+                  <label>STATE</label>
+              </div>
+                  <button id="schedulebtn{{ value['id'] }}" onclick="schedule_device({{ value['id'] }})" style="font-size: 10px; margin-top: 20px;" class="ui teal button hidden">SCHEDULE</button>
               <br>
-              <button style="font-size: 10px; margin-top: 20px;" class="ui red button hidden">CANCEL</button>
+              <button id="cancelschedulebtn{{ value['id'] }}" onclick="unschedule_device({{ value['id'] }})" style="font-size: 10px; margin-top: 20px;" class="ui red button ">CANCEL</button>
+              {% else %}
+                  <div id="schedbox{{ value['id'] }}" class="ui slider checkbox">
+                  {% if value['schedule_state'] == 'on' %}
+                    <input checked id="statusschedule{{ value['id'] }}" type="checkbox">
+                  {% else %}
+                      <input id="statusschedule{{ value['id'] }}" type="checkbox">
+                  {% endif %}
+                  <label>STATE</label>
+              </div>
+              <button id="schedulebtn{{ value['id'] }}" onclick="schedule_device({{ value['id'] }})" style="font-size: 10px; margin-top: 20px;" class="ui teal button">SCHEDULE</button>
+              <br>
+              <button id="cancelschedulebtn{{ value['id'] }}" onclick="unschedule_device({{ value['id'] }})" style="font-size: 10px; margin-top: 20px;" class="ui red button hidden">CANCEL</button>
+              {% endif %}
           </div>
           <br/>
         </div>
