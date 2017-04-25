@@ -11,6 +11,11 @@ from flask import jsonify
 
 from flask_socketio import SocketIO, send, emit
 
+from schedule import *
+import schedule
+import time
+from threading import Thread
+
 
 
 app = Flask(__name__)
@@ -287,7 +292,20 @@ def server_event_listener(data):
     emit('hub_event_listener', data, broadcast=True)
 
 
+def run_schedule():
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
+
+
+def job():
+    print("I am working...")
+
+
 if __name__ == '__main__':
+    schedule.every(1).seconds.do(job)
+    t = Thread(target=run_schedule)
+    t.start()
     socketio.run(app)
 
 

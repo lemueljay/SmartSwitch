@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d537f09-4759-4740-a804-31d4c060c262" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart.sqlite" afterPath="$PROJECT_DIR$/smart.sqlite" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/devices.js" afterPath="$PROJECT_DIR$/static/js/devices.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/devices.html" afterPath="$PROJECT_DIR$/templates/devices.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
     </list>
     <ignored path="SmartSwitch.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,22 +31,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="710">
+              <caret line="307" column="13" selection-start-line="307" selection-start-column="13" selection-end-line="307" selection-end-column="13" />
               <folding>
                 <element signature="e#0#68#0" expanded="true" />
-                <marker date="1493126159160" expanded="true" signature="892:937" placeholder="SELECT ROWID... users" />
-                <marker date="1493126159160" expanded="true" signature="1559:1604" placeholder="SELECT ROWID..users..." />
-                <marker date="1493126159160" expanded="true" signature="3143:3216" placeholder="INSERT INTO ..." />
-                <marker date="1493126159160" expanded="true" signature="3307:3352" placeholder="SELECT ROWID..users..." />
-                <marker date="1493126159160" expanded="true" signature="3900:3964" placeholder="SELECT * FRO..Hubcodes..." />
-                <marker date="1493126159160" expanded="true" signature="4616:4668" placeholder="INSERT INTO ..." />
-                <marker date="1493126159160" expanded="true" signature="5106:5159" placeholder="DELETE FROM ..." />
-                <marker date="1493126159160" expanded="true" signature="5458:5527" placeholder="SELECT * FRO... Hubcodes" />
-                <marker date="1493126159160" expanded="true" signature="5692:5752" placeholder="SELECT * FRO... Devices" />
+                <marker date="1493136246466" expanded="true" signature="973:1018" placeholder="SELECT ROWID... users" />
+                <marker date="1493136246466" expanded="true" signature="1640:1685" placeholder="SELECT ROWID..users..." />
+                <marker date="1493136246466" expanded="true" signature="3224:3297" placeholder="INSERT INTO ..." />
+                <marker date="1493136246466" expanded="true" signature="3388:3433" placeholder="SELECT ROWID..users..." />
+                <marker date="1493136246466" expanded="true" signature="3981:4045" placeholder="SELECT * FRO..Hubcodes..." />
+                <marker date="1493136246466" expanded="true" signature="4697:4749" placeholder="INSERT INTO ..." />
+                <marker date="1493136246466" expanded="true" signature="5187:5240" placeholder="DELETE FROM ..." />
+                <marker date="1493136246466" expanded="true" signature="5539:5608" placeholder="SELECT * FRO... Hubcodes" />
+                <marker date="1493136246466" expanded="true" signature="5773:5833" placeholder="SELECT * FRO... Devices" />
               </folding>
             </state>
           </provider>
@@ -65,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="devices.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="devices.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/devices.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="713">
@@ -128,11 +125,11 @@
         <option value="$PROJECT_DIR$/static/js/ajax.js" />
         <option value="$PROJECT_DIR$/static/css/index.css" />
         <option value="$PROJECT_DIR$/static/js/index.js" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/static/js/hubsocket.js" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/static/js/devices.js" />
         <option value="$PROJECT_DIR$/templates/devices.html" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
@@ -622,15 +619,15 @@
           <caret line="113" column="11" selection-start-line="113" selection-start-column="11" selection-end-line="113" selection-end-column="11" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
-            <marker date="1493126159160" expanded="true" signature="892:937" placeholder="SELECT ROWID... users" />
-            <marker date="1493126159160" expanded="true" signature="1559:1604" placeholder="SELECT ROWID..users..." />
-            <marker date="1493126159160" expanded="true" signature="3143:3216" placeholder="INSERT INTO ..." />
-            <marker date="1493126159160" expanded="true" signature="3307:3352" placeholder="SELECT ROWID..users..." />
-            <marker date="1493126159160" expanded="true" signature="3900:3964" placeholder="SELECT * FRO..Hubcodes..." />
-            <marker date="1493126159160" expanded="true" signature="4616:4668" placeholder="INSERT INTO ..." />
-            <marker date="1493126159160" expanded="true" signature="5106:5159" placeholder="DELETE FROM ..." />
-            <marker date="1493126159160" expanded="true" signature="5458:5527" placeholder="SELECT * FRO... Hubcodes" />
-            <marker date="1493126159160" expanded="true" signature="5692:5752" placeholder="SELECT * FRO... Devices" />
+            <marker date="1493136246466" expanded="true" signature="973:1018" placeholder="SELECT ROWID... users" />
+            <marker date="1493136246466" expanded="true" signature="1640:1685" placeholder="SELECT ROWID..users..." />
+            <marker date="1493136246466" expanded="true" signature="3224:3297" placeholder="INSERT INTO ..." />
+            <marker date="1493136246466" expanded="true" signature="3388:3433" placeholder="SELECT ROWID..users..." />
+            <marker date="1493136246466" expanded="true" signature="3981:4045" placeholder="SELECT * FRO..Hubcodes..." />
+            <marker date="1493136246466" expanded="true" signature="4697:4749" placeholder="INSERT INTO ..." />
+            <marker date="1493136246466" expanded="true" signature="5187:5240" placeholder="DELETE FROM ..." />
+            <marker date="1493136246466" expanded="true" signature="5539:5608" placeholder="SELECT * FRO... Hubcodes" />
+            <marker date="1493136246466" expanded="true" signature="5773:5833" placeholder="SELECT * FRO... Devices" />
           </folding>
         </state>
       </provider>
@@ -685,15 +682,15 @@
           <caret line="113" column="11" selection-start-line="113" selection-start-column="11" selection-end-line="113" selection-end-column="11" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
-            <marker date="1493126159160" expanded="true" signature="892:937" placeholder="SELECT ROWID... users" />
-            <marker date="1493126159160" expanded="true" signature="1559:1604" placeholder="SELECT ROWID..users..." />
-            <marker date="1493126159160" expanded="true" signature="3143:3216" placeholder="INSERT INTO ..." />
-            <marker date="1493126159160" expanded="true" signature="3307:3352" placeholder="SELECT ROWID..users..." />
-            <marker date="1493126159160" expanded="true" signature="3900:3964" placeholder="SELECT * FRO..Hubcodes..." />
-            <marker date="1493126159160" expanded="true" signature="4616:4668" placeholder="INSERT INTO ..." />
-            <marker date="1493126159160" expanded="true" signature="5106:5159" placeholder="DELETE FROM ..." />
-            <marker date="1493126159160" expanded="true" signature="5458:5527" placeholder="SELECT * FRO... Hubcodes" />
-            <marker date="1493126159160" expanded="true" signature="5692:5752" placeholder="SELECT * FRO... Devices" />
+            <marker date="1493136246466" expanded="true" signature="973:1018" placeholder="SELECT ROWID... users" />
+            <marker date="1493136246466" expanded="true" signature="1640:1685" placeholder="SELECT ROWID..users..." />
+            <marker date="1493136246466" expanded="true" signature="3224:3297" placeholder="INSERT INTO ..." />
+            <marker date="1493136246466" expanded="true" signature="3388:3433" placeholder="SELECT ROWID..users..." />
+            <marker date="1493136246466" expanded="true" signature="3981:4045" placeholder="SELECT * FRO..Hubcodes..." />
+            <marker date="1493136246466" expanded="true" signature="4697:4749" placeholder="INSERT INTO ..." />
+            <marker date="1493136246466" expanded="true" signature="5187:5240" placeholder="DELETE FROM ..." />
+            <marker date="1493136246466" expanded="true" signature="5539:5608" placeholder="SELECT * FRO... Hubcodes" />
+            <marker date="1493136246466" expanded="true" signature="5773:5833" placeholder="SELECT * FRO... Devices" />
           </folding>
         </state>
       </provider>
@@ -748,15 +745,15 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
-            <marker date="1493126159160" expanded="true" signature="892:937" placeholder="SELECT ROWID... users" />
-            <marker date="1493126159160" expanded="true" signature="1559:1604" placeholder="SELECT ROWID..users..." />
-            <marker date="1493126159160" expanded="true" signature="3143:3216" placeholder="INSERT INTO ..." />
-            <marker date="1493126159160" expanded="true" signature="3307:3352" placeholder="SELECT ROWID..users..." />
-            <marker date="1493126159160" expanded="true" signature="3900:3964" placeholder="SELECT * FRO..Hubcodes..." />
-            <marker date="1493126159160" expanded="true" signature="4616:4668" placeholder="INSERT INTO ..." />
-            <marker date="1493126159160" expanded="true" signature="5106:5159" placeholder="DELETE FROM ..." />
-            <marker date="1493126159160" expanded="true" signature="5458:5527" placeholder="SELECT * FRO... Hubcodes" />
-            <marker date="1493126159160" expanded="true" signature="5692:5752" placeholder="SELECT * FRO... Devices" />
+            <marker date="1493136246466" expanded="true" signature="973:1018" placeholder="SELECT ROWID... users" />
+            <marker date="1493136246466" expanded="true" signature="1640:1685" placeholder="SELECT ROWID..users..." />
+            <marker date="1493136246466" expanded="true" signature="3224:3297" placeholder="INSERT INTO ..." />
+            <marker date="1493136246466" expanded="true" signature="3388:3433" placeholder="SELECT ROWID..users..." />
+            <marker date="1493136246466" expanded="true" signature="3981:4045" placeholder="SELECT * FRO..Hubcodes..." />
+            <marker date="1493136246466" expanded="true" signature="4697:4749" placeholder="INSERT INTO ..." />
+            <marker date="1493136246466" expanded="true" signature="5187:5240" placeholder="DELETE FROM ..." />
+            <marker date="1493136246466" expanded="true" signature="5539:5608" placeholder="SELECT * FRO... Hubcodes" />
+            <marker date="1493136246466" expanded="true" signature="5773:5833" placeholder="SELECT * FRO... Devices" />
           </folding>
         </state>
       </provider>
@@ -789,15 +786,15 @@
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
-            <marker date="1493126159160" expanded="true" signature="892:937" placeholder="SELECT ROWID... users" />
-            <marker date="1493126159160" expanded="true" signature="1559:1604" placeholder="SELECT ROWID..users..." />
-            <marker date="1493126159160" expanded="true" signature="3143:3216" placeholder="INSERT INTO ..." />
-            <marker date="1493126159160" expanded="true" signature="3307:3352" placeholder="SELECT ROWID..users..." />
-            <marker date="1493126159160" expanded="true" signature="3900:3964" placeholder="SELECT * FRO..Hubcodes..." />
-            <marker date="1493126159160" expanded="true" signature="4616:4668" placeholder="INSERT INTO ..." />
-            <marker date="1493126159160" expanded="true" signature="5106:5159" placeholder="DELETE FROM ..." />
-            <marker date="1493126159160" expanded="true" signature="5458:5527" placeholder="SELECT * FRO... Hubcodes" />
-            <marker date="1493126159160" expanded="true" signature="5692:5752" placeholder="SELECT * FRO... Devices" />
+            <marker date="1493136246466" expanded="true" signature="973:1018" placeholder="SELECT ROWID... users" />
+            <marker date="1493136246466" expanded="true" signature="1640:1685" placeholder="SELECT ROWID..users..." />
+            <marker date="1493136246466" expanded="true" signature="3224:3297" placeholder="INSERT INTO ..." />
+            <marker date="1493136246466" expanded="true" signature="3388:3433" placeholder="SELECT ROWID..users..." />
+            <marker date="1493136246466" expanded="true" signature="3981:4045" placeholder="SELECT * FRO..Hubcodes..." />
+            <marker date="1493136246466" expanded="true" signature="4697:4749" placeholder="INSERT INTO ..." />
+            <marker date="1493136246466" expanded="true" signature="5187:5240" placeholder="DELETE FROM ..." />
+            <marker date="1493136246466" expanded="true" signature="5539:5608" placeholder="SELECT * FRO... Hubcodes" />
+            <marker date="1493136246466" expanded="true" signature="5773:5833" placeholder="SELECT * FRO... Devices" />
           </folding>
         </state>
       </provider>
@@ -830,15 +827,15 @@
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
-            <marker date="1493126159160" expanded="true" signature="892:937" placeholder="SELECT ROWID... users" />
-            <marker date="1493126159160" expanded="true" signature="1559:1604" placeholder="SELECT ROWID..users..." />
-            <marker date="1493126159160" expanded="true" signature="3143:3216" placeholder="INSERT INTO ..." />
-            <marker date="1493126159160" expanded="true" signature="3307:3352" placeholder="SELECT ROWID..users..." />
-            <marker date="1493126159160" expanded="true" signature="3900:3964" placeholder="SELECT * FRO..Hubcodes..." />
-            <marker date="1493126159160" expanded="true" signature="4616:4668" placeholder="INSERT INTO ..." />
-            <marker date="1493126159160" expanded="true" signature="5106:5159" placeholder="DELETE FROM ..." />
-            <marker date="1493126159160" expanded="true" signature="5458:5527" placeholder="SELECT * FRO... Hubcodes" />
-            <marker date="1493126159160" expanded="true" signature="5692:5752" placeholder="SELECT * FRO... Devices" />
+            <marker date="1493136246466" expanded="true" signature="973:1018" placeholder="SELECT ROWID... users" />
+            <marker date="1493136246466" expanded="true" signature="1640:1685" placeholder="SELECT ROWID..users..." />
+            <marker date="1493136246466" expanded="true" signature="3224:3297" placeholder="INSERT INTO ..." />
+            <marker date="1493136246466" expanded="true" signature="3388:3433" placeholder="SELECT ROWID..users..." />
+            <marker date="1493136246466" expanded="true" signature="3981:4045" placeholder="SELECT * FRO..Hubcodes..." />
+            <marker date="1493136246466" expanded="true" signature="4697:4749" placeholder="INSERT INTO ..." />
+            <marker date="1493136246466" expanded="true" signature="5187:5240" placeholder="DELETE FROM ..." />
+            <marker date="1493136246466" expanded="true" signature="5539:5608" placeholder="SELECT * FRO... Hubcodes" />
+            <marker date="1493136246466" expanded="true" signature="5773:5833" placeholder="SELECT * FRO... Devices" />
           </folding>
         </state>
       </provider>
@@ -871,15 +868,15 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
-            <marker date="1493126159160" expanded="true" signature="892:937" placeholder="SELECT ROWID... users" />
-            <marker date="1493126159160" expanded="true" signature="1559:1604" placeholder="SELECT ROWID..users..." />
-            <marker date="1493126159160" expanded="true" signature="3143:3216" placeholder="INSERT INTO ..." />
-            <marker date="1493126159160" expanded="true" signature="3307:3352" placeholder="SELECT ROWID..users..." />
-            <marker date="1493126159160" expanded="true" signature="3900:3964" placeholder="SELECT * FRO..Hubcodes..." />
-            <marker date="1493126159160" expanded="true" signature="4616:4668" placeholder="INSERT INTO ..." />
-            <marker date="1493126159160" expanded="true" signature="5106:5159" placeholder="DELETE FROM ..." />
-            <marker date="1493126159160" expanded="true" signature="5458:5527" placeholder="SELECT * FRO... Hubcodes" />
-            <marker date="1493126159160" expanded="true" signature="5692:5752" placeholder="SELECT * FRO... Devices" />
+            <marker date="1493136246466" expanded="true" signature="973:1018" placeholder="SELECT ROWID... users" />
+            <marker date="1493136246466" expanded="true" signature="1640:1685" placeholder="SELECT ROWID..users..." />
+            <marker date="1493136246466" expanded="true" signature="3224:3297" placeholder="INSERT INTO ..." />
+            <marker date="1493136246466" expanded="true" signature="3388:3433" placeholder="SELECT ROWID..users..." />
+            <marker date="1493136246466" expanded="true" signature="3981:4045" placeholder="SELECT * FRO..Hubcodes..." />
+            <marker date="1493136246466" expanded="true" signature="4697:4749" placeholder="INSERT INTO ..." />
+            <marker date="1493136246466" expanded="true" signature="5187:5240" placeholder="DELETE FROM ..." />
+            <marker date="1493136246466" expanded="true" signature="5539:5608" placeholder="SELECT * FRO... Hubcodes" />
+            <marker date="1493136246466" expanded="true" signature="5773:5833" placeholder="SELECT * FRO... Devices" />
           </folding>
         </state>
       </provider>
@@ -993,25 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-            <marker date="1493126159160" expanded="true" signature="892:937" placeholder="SELECT ROWID... users" />
-            <marker date="1493126159160" expanded="true" signature="1559:1604" placeholder="SELECT ROWID..users..." />
-            <marker date="1493126159160" expanded="true" signature="3143:3216" placeholder="INSERT INTO ..." />
-            <marker date="1493126159160" expanded="true" signature="3307:3352" placeholder="SELECT ROWID..users..." />
-            <marker date="1493126159160" expanded="true" signature="3900:3964" placeholder="SELECT * FRO..Hubcodes..." />
-            <marker date="1493126159160" expanded="true" signature="4616:4668" placeholder="INSERT INTO ..." />
-            <marker date="1493126159160" expanded="true" signature="5106:5159" placeholder="DELETE FROM ..." />
-            <marker date="1493126159160" expanded="true" signature="5458:5527" placeholder="SELECT * FRO... Hubcodes" />
-            <marker date="1493126159160" expanded="true" signature="5692:5752" placeholder="SELECT * FRO... Devices" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
@@ -1040,6 +1018,25 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="710">
+          <caret line="307" column="13" selection-start-line="307" selection-start-column="13" selection-end-line="307" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+            <marker date="1493136246466" expanded="true" signature="973:1018" placeholder="SELECT ROWID... users" />
+            <marker date="1493136246466" expanded="true" signature="1640:1685" placeholder="SELECT ROWID..users..." />
+            <marker date="1493136246466" expanded="true" signature="3224:3297" placeholder="INSERT INTO ..." />
+            <marker date="1493136246466" expanded="true" signature="3388:3433" placeholder="SELECT ROWID..users..." />
+            <marker date="1493136246466" expanded="true" signature="3981:4045" placeholder="SELECT * FRO..Hubcodes..." />
+            <marker date="1493136246466" expanded="true" signature="4697:4749" placeholder="INSERT INTO ..." />
+            <marker date="1493136246466" expanded="true" signature="5187:5240" placeholder="DELETE FROM ..." />
+            <marker date="1493136246466" expanded="true" signature="5539:5608" placeholder="SELECT * FRO... Hubcodes" />
+            <marker date="1493136246466" expanded="true" signature="5773:5833" placeholder="SELECT * FRO... Devices" />
           </folding>
         </state>
       </provider>
