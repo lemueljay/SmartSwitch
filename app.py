@@ -215,6 +215,17 @@ def get_devices():
                 devices = None
             return render_template('devices.html', devices=devices)
 
+@app.route('/switch', methods=['GET', 'POST'])
+def switch():
+    if request.method == 'POST':
+        device_id = request.json['device_id']
+        hubcode = request.json['hubcode']
+        device_state = request.json['device_state']
+
+
+
+        return 'Lemmeister'
+
 
 # SOCKETS
 
@@ -266,6 +277,12 @@ def status(hubcode):
             break
     print(data)
     emit('hub_status', data, broadcast=True)
+
+
+@socketio.on('server_event_listener')
+def server_event_listener(data):
+    emit('hub_event_listener', data, broadcast=True)
+
 
 if __name__ == '__main__':
     socketio.run(app)
