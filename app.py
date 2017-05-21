@@ -373,7 +373,7 @@ if __name__ == '__main__':
     schedule.every(1).seconds.do(job)
     t = Thread(target=run_schedule)
     t.start()
-    socketio.run(app)
+    socketio.run(app, host='192.168.137.1', port=5000)
 
 
 

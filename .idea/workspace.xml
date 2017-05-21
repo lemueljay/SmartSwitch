@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d537f09-4759-4740-a804-31d4c060c262" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart.sqlite" afterPath="$PROJECT_DIR$/smart.sqlite" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/ajax.js" afterPath="$PROJECT_DIR$/static/js/ajax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <ignored path="SmartSwitch.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,40 +32,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="281" column="26" selection-start-line="281" selection-start-column="26" selection-end-line="281" selection-end-column="26" />
+            <state relative-caret-position="634">
+              <caret line="375" column="28" selection-start-line="375" selection-start-column="28" selection-end-line="375" selection-end-column="41" />
               <folding>
                 <element signature="e#0#68#0" expanded="true" />
-                <marker date="1495362167645" expanded="true" signature="1050:1095" placeholder="SELECT ROWID... users" />
-                <marker date="1495362167645" expanded="true" signature="1720:1765" placeholder="SELECT ROWID..users..." />
-                <marker date="1495362167645" expanded="true" signature="3304:3377" placeholder="INSERT INTO ..." />
-                <marker date="1495362167645" expanded="true" signature="3468:3513" placeholder="SELECT ROWID..users..." />
-                <marker date="1495362167645" expanded="true" signature="4061:4125" placeholder="SELECT * FRO..Hubcodes..." />
-                <marker date="1495362167645" expanded="true" signature="4777:4829" placeholder="INSERT INTO ..." />
-                <marker date="1495362167645" expanded="true" signature="5267:5320" placeholder="DELETE FROM ..." />
-                <marker date="1495362167645" expanded="true" signature="5619:5688" placeholder="SELECT * FRO... Hubcodes" />
-                <marker date="1495362167645" expanded="true" signature="5853:5913" placeholder="SELECT * FRO... Devices" />
-                <marker date="1495362167645" expanded="true" signature="7586:7626" placeholder="UPDATE Devic... " />
-                <marker date="1495362167645" expanded="true" signature="7586:7674" placeholder="UPDATE Devic... " />
-                <marker date="1495362167645" expanded="true" signature="7586:7712" placeholder="UPDATE Devic... " />
-                <marker date="1495362167645" expanded="true" signature="7586:7727" placeholder="UPDATE Devic... " />
-                <marker date="1495362167645" expanded="true" signature="8100:8155" placeholder="UPDATE Devic... " />
-                <marker date="1495362167645" expanded="true" signature="8631:8699" placeholder="INSERT INTO devices... " />
-                <marker date="1495362167645" expanded="true" signature="10591:10668" placeholder="SELECT * FRO... Devices" />
-                <marker date="1495362167645" expanded="true" signature="10871:10926" placeholder="UPDATE Devic... " />
+                <marker date="1495366547972" expanded="true" signature="1050:1095" placeholder="SELECT ROWID... users" />
+                <marker date="1495366547972" expanded="true" signature="1720:1765" placeholder="SELECT ROWID..users..." />
+                <marker date="1495366547972" expanded="true" signature="3304:3377" placeholder="INSERT INTO ..." />
+                <marker date="1495366547972" expanded="true" signature="3468:3513" placeholder="SELECT ROWID..users..." />
+                <marker date="1495366547972" expanded="true" signature="4061:4125" placeholder="SELECT * FRO..Hubcodes..." />
+                <marker date="1495366547972" expanded="true" signature="4777:4829" placeholder="INSERT INTO ..." />
+                <marker date="1495366547972" expanded="true" signature="5267:5320" placeholder="DELETE FROM ..." />
+                <marker date="1495366547972" expanded="true" signature="5619:5688" placeholder="SELECT * FRO... Hubcodes" />
+                <marker date="1495366547972" expanded="true" signature="5853:5913" placeholder="SELECT * FRO... Devices" />
+                <marker date="1495366547972" expanded="true" signature="7586:7626" placeholder="UPDATE Devic... " />
+                <marker date="1495366547972" expanded="true" signature="7586:7674" placeholder="UPDATE Devic... " />
+                <marker date="1495366547972" expanded="true" signature="7586:7712" placeholder="UPDATE Devic... " />
+                <marker date="1495366547972" expanded="true" signature="7586:7727" placeholder="UPDATE Devic... " />
+                <marker date="1495366547972" expanded="true" signature="8100:8155" placeholder="UPDATE Devic... " />
+                <marker date="1495366547972" expanded="true" signature="8631:8699" placeholder="INSERT INTO devices... " />
+                <marker date="1495366547972" expanded="true" signature="10591:10668" placeholder="SELECT * FRO... Devices" />
+                <marker date="1495366547972" expanded="true" signature="10871:10926" placeholder="UPDATE Devic... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="devices.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/devices.html">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+            <state relative-caret-position="1910">
+              <caret line="448" column="0" selection-start-line="448" selection-start-column="0" selection-end-line="448" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -74,33 +74,28 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="72" column="67" selection-start-line="72" selection-start-column="60" selection-end-line="72" selection-end-column="67" />
+            <state relative-caret-position="-748">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/index.js">
+      <file leaf-file-name="devices.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/devices.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="239" column="16" selection-start-line="239" selection-start-column="16" selection-end-line="239" selection-end-column="51" />
-              <folding>
-                <marker date="1493114197098" expanded="true" signature="1937:1950" placeholder="..." />
-                <marker date="1493114197098" expanded="true" signature="4678:4691" placeholder="..." />
-                <marker date="1493114197098" expanded="true" signature="7527:7540" placeholder="..." />
-                <marker date="1493114197098" expanded="true" signature="8891:8904" placeholder="..." />
-              </folding>
+            <state relative-caret-position="198">
+              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajax.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/js/ajax.js">
+      <file leaf-file-name="devices.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/devices.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+            <state relative-caret-position="568">
+              <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -133,9 +128,9 @@
         <option value="$PROJECT_DIR$/static/js/devices.js" />
         <option value="$PROJECT_DIR$/templates/devices.html" />
         <option value="$PROJECT_DIR$/static/css/index.css" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/static/js/ajax.js" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
@@ -625,23 +620,23 @@
           <caret line="113" column="11" selection-start-line="113" selection-start-column="11" selection-end-line="113" selection-end-column="11" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
-            <marker date="1495362167645" expanded="true" signature="1050:1095" placeholder="SELECT ROWID... users" />
-            <marker date="1495362167645" expanded="true" signature="1720:1765" placeholder="SELECT ROWID..users..." />
-            <marker date="1495362167645" expanded="true" signature="3304:3377" placeholder="INSERT INTO ..." />
-            <marker date="1495362167645" expanded="true" signature="3468:3513" placeholder="SELECT ROWID..users..." />
-            <marker date="1495362167645" expanded="true" signature="4061:4125" placeholder="SELECT * FRO..Hubcodes..." />
-            <marker date="1495362167645" expanded="true" signature="4777:4829" placeholder="INSERT INTO ..." />
-            <marker date="1495362167645" expanded="true" signature="5267:5320" placeholder="DELETE FROM ..." />
-            <marker date="1495362167645" expanded="true" signature="5619:5688" placeholder="SELECT * FRO... Hubcodes" />
-            <marker date="1495362167645" expanded="true" signature="5853:5913" placeholder="SELECT * FRO... Devices" />
-            <marker date="1495362167645" expanded="true" signature="7586:7626" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7674" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7712" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7727" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="8100:8155" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="8631:8699" placeholder="INSERT INTO devices... " />
-            <marker date="1495362167645" expanded="true" signature="10591:10668" placeholder="SELECT * FRO... Devices" />
-            <marker date="1495362167645" expanded="true" signature="10871:10926" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="1050:1095" placeholder="SELECT ROWID... users" />
+            <marker date="1495366547972" expanded="true" signature="1720:1765" placeholder="SELECT ROWID..users..." />
+            <marker date="1495366547972" expanded="true" signature="3304:3377" placeholder="INSERT INTO ..." />
+            <marker date="1495366547972" expanded="true" signature="3468:3513" placeholder="SELECT ROWID..users..." />
+            <marker date="1495366547972" expanded="true" signature="4061:4125" placeholder="SELECT * FRO..Hubcodes..." />
+            <marker date="1495366547972" expanded="true" signature="4777:4829" placeholder="INSERT INTO ..." />
+            <marker date="1495366547972" expanded="true" signature="5267:5320" placeholder="DELETE FROM ..." />
+            <marker date="1495366547972" expanded="true" signature="5619:5688" placeholder="SELECT * FRO... Hubcodes" />
+            <marker date="1495366547972" expanded="true" signature="5853:5913" placeholder="SELECT * FRO... Devices" />
+            <marker date="1495366547972" expanded="true" signature="7586:7626" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7674" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7712" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7727" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="8100:8155" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="8631:8699" placeholder="INSERT INTO devices... " />
+            <marker date="1495366547972" expanded="true" signature="10591:10668" placeholder="SELECT * FRO... Devices" />
+            <marker date="1495366547972" expanded="true" signature="10871:10926" placeholder="UPDATE Devic... " />
           </folding>
         </state>
       </provider>
@@ -696,23 +691,23 @@
           <caret line="113" column="11" selection-start-line="113" selection-start-column="11" selection-end-line="113" selection-end-column="11" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
-            <marker date="1495362167645" expanded="true" signature="1050:1095" placeholder="SELECT ROWID... users" />
-            <marker date="1495362167645" expanded="true" signature="1720:1765" placeholder="SELECT ROWID..users..." />
-            <marker date="1495362167645" expanded="true" signature="3304:3377" placeholder="INSERT INTO ..." />
-            <marker date="1495362167645" expanded="true" signature="3468:3513" placeholder="SELECT ROWID..users..." />
-            <marker date="1495362167645" expanded="true" signature="4061:4125" placeholder="SELECT * FRO..Hubcodes..." />
-            <marker date="1495362167645" expanded="true" signature="4777:4829" placeholder="INSERT INTO ..." />
-            <marker date="1495362167645" expanded="true" signature="5267:5320" placeholder="DELETE FROM ..." />
-            <marker date="1495362167645" expanded="true" signature="5619:5688" placeholder="SELECT * FRO... Hubcodes" />
-            <marker date="1495362167645" expanded="true" signature="5853:5913" placeholder="SELECT * FRO... Devices" />
-            <marker date="1495362167645" expanded="true" signature="7586:7626" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7674" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7712" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7727" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="8100:8155" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="8631:8699" placeholder="INSERT INTO devices... " />
-            <marker date="1495362167645" expanded="true" signature="10591:10668" placeholder="SELECT * FRO... Devices" />
-            <marker date="1495362167645" expanded="true" signature="10871:10926" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="1050:1095" placeholder="SELECT ROWID... users" />
+            <marker date="1495366547972" expanded="true" signature="1720:1765" placeholder="SELECT ROWID..users..." />
+            <marker date="1495366547972" expanded="true" signature="3304:3377" placeholder="INSERT INTO ..." />
+            <marker date="1495366547972" expanded="true" signature="3468:3513" placeholder="SELECT ROWID..users..." />
+            <marker date="1495366547972" expanded="true" signature="4061:4125" placeholder="SELECT * FRO..Hubcodes..." />
+            <marker date="1495366547972" expanded="true" signature="4777:4829" placeholder="INSERT INTO ..." />
+            <marker date="1495366547972" expanded="true" signature="5267:5320" placeholder="DELETE FROM ..." />
+            <marker date="1495366547972" expanded="true" signature="5619:5688" placeholder="SELECT * FRO... Hubcodes" />
+            <marker date="1495366547972" expanded="true" signature="5853:5913" placeholder="SELECT * FRO... Devices" />
+            <marker date="1495366547972" expanded="true" signature="7586:7626" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7674" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7712" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7727" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="8100:8155" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="8631:8699" placeholder="INSERT INTO devices... " />
+            <marker date="1495366547972" expanded="true" signature="10591:10668" placeholder="SELECT * FRO... Devices" />
+            <marker date="1495366547972" expanded="true" signature="10871:10926" placeholder="UPDATE Devic... " />
           </folding>
         </state>
       </provider>
@@ -767,23 +762,23 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
-            <marker date="1495362167645" expanded="true" signature="1050:1095" placeholder="SELECT ROWID... users" />
-            <marker date="1495362167645" expanded="true" signature="1720:1765" placeholder="SELECT ROWID..users..." />
-            <marker date="1495362167645" expanded="true" signature="3304:3377" placeholder="INSERT INTO ..." />
-            <marker date="1495362167645" expanded="true" signature="3468:3513" placeholder="SELECT ROWID..users..." />
-            <marker date="1495362167645" expanded="true" signature="4061:4125" placeholder="SELECT * FRO..Hubcodes..." />
-            <marker date="1495362167645" expanded="true" signature="4777:4829" placeholder="INSERT INTO ..." />
-            <marker date="1495362167645" expanded="true" signature="5267:5320" placeholder="DELETE FROM ..." />
-            <marker date="1495362167645" expanded="true" signature="5619:5688" placeholder="SELECT * FRO... Hubcodes" />
-            <marker date="1495362167645" expanded="true" signature="5853:5913" placeholder="SELECT * FRO... Devices" />
-            <marker date="1495362167645" expanded="true" signature="7586:7626" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7674" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7712" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7727" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="8100:8155" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="8631:8699" placeholder="INSERT INTO devices... " />
-            <marker date="1495362167645" expanded="true" signature="10591:10668" placeholder="SELECT * FRO... Devices" />
-            <marker date="1495362167645" expanded="true" signature="10871:10926" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="1050:1095" placeholder="SELECT ROWID... users" />
+            <marker date="1495366547972" expanded="true" signature="1720:1765" placeholder="SELECT ROWID..users..." />
+            <marker date="1495366547972" expanded="true" signature="3304:3377" placeholder="INSERT INTO ..." />
+            <marker date="1495366547972" expanded="true" signature="3468:3513" placeholder="SELECT ROWID..users..." />
+            <marker date="1495366547972" expanded="true" signature="4061:4125" placeholder="SELECT * FRO..Hubcodes..." />
+            <marker date="1495366547972" expanded="true" signature="4777:4829" placeholder="INSERT INTO ..." />
+            <marker date="1495366547972" expanded="true" signature="5267:5320" placeholder="DELETE FROM ..." />
+            <marker date="1495366547972" expanded="true" signature="5619:5688" placeholder="SELECT * FRO... Hubcodes" />
+            <marker date="1495366547972" expanded="true" signature="5853:5913" placeholder="SELECT * FRO... Devices" />
+            <marker date="1495366547972" expanded="true" signature="7586:7626" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7674" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7712" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7727" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="8100:8155" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="8631:8699" placeholder="INSERT INTO devices... " />
+            <marker date="1495366547972" expanded="true" signature="10591:10668" placeholder="SELECT * FRO... Devices" />
+            <marker date="1495366547972" expanded="true" signature="10871:10926" placeholder="UPDATE Devic... " />
           </folding>
         </state>
       </provider>
@@ -816,23 +811,23 @@
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
-            <marker date="1495362167645" expanded="true" signature="1050:1095" placeholder="SELECT ROWID... users" />
-            <marker date="1495362167645" expanded="true" signature="1720:1765" placeholder="SELECT ROWID..users..." />
-            <marker date="1495362167645" expanded="true" signature="3304:3377" placeholder="INSERT INTO ..." />
-            <marker date="1495362167645" expanded="true" signature="3468:3513" placeholder="SELECT ROWID..users..." />
-            <marker date="1495362167645" expanded="true" signature="4061:4125" placeholder="SELECT * FRO..Hubcodes..." />
-            <marker date="1495362167645" expanded="true" signature="4777:4829" placeholder="INSERT INTO ..." />
-            <marker date="1495362167645" expanded="true" signature="5267:5320" placeholder="DELETE FROM ..." />
-            <marker date="1495362167645" expanded="true" signature="5619:5688" placeholder="SELECT * FRO... Hubcodes" />
-            <marker date="1495362167645" expanded="true" signature="5853:5913" placeholder="SELECT * FRO... Devices" />
-            <marker date="1495362167645" expanded="true" signature="7586:7626" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7674" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7712" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7727" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="8100:8155" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="8631:8699" placeholder="INSERT INTO devices... " />
-            <marker date="1495362167645" expanded="true" signature="10591:10668" placeholder="SELECT * FRO... Devices" />
-            <marker date="1495362167645" expanded="true" signature="10871:10926" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="1050:1095" placeholder="SELECT ROWID... users" />
+            <marker date="1495366547972" expanded="true" signature="1720:1765" placeholder="SELECT ROWID..users..." />
+            <marker date="1495366547972" expanded="true" signature="3304:3377" placeholder="INSERT INTO ..." />
+            <marker date="1495366547972" expanded="true" signature="3468:3513" placeholder="SELECT ROWID..users..." />
+            <marker date="1495366547972" expanded="true" signature="4061:4125" placeholder="SELECT * FRO..Hubcodes..." />
+            <marker date="1495366547972" expanded="true" signature="4777:4829" placeholder="INSERT INTO ..." />
+            <marker date="1495366547972" expanded="true" signature="5267:5320" placeholder="DELETE FROM ..." />
+            <marker date="1495366547972" expanded="true" signature="5619:5688" placeholder="SELECT * FRO... Hubcodes" />
+            <marker date="1495366547972" expanded="true" signature="5853:5913" placeholder="SELECT * FRO... Devices" />
+            <marker date="1495366547972" expanded="true" signature="7586:7626" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7674" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7712" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7727" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="8100:8155" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="8631:8699" placeholder="INSERT INTO devices... " />
+            <marker date="1495366547972" expanded="true" signature="10591:10668" placeholder="SELECT * FRO... Devices" />
+            <marker date="1495366547972" expanded="true" signature="10871:10926" placeholder="UPDATE Devic... " />
           </folding>
         </state>
       </provider>
@@ -865,23 +860,23 @@
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
-            <marker date="1495362167645" expanded="true" signature="1050:1095" placeholder="SELECT ROWID... users" />
-            <marker date="1495362167645" expanded="true" signature="1720:1765" placeholder="SELECT ROWID..users..." />
-            <marker date="1495362167645" expanded="true" signature="3304:3377" placeholder="INSERT INTO ..." />
-            <marker date="1495362167645" expanded="true" signature="3468:3513" placeholder="SELECT ROWID..users..." />
-            <marker date="1495362167645" expanded="true" signature="4061:4125" placeholder="SELECT * FRO..Hubcodes..." />
-            <marker date="1495362167645" expanded="true" signature="4777:4829" placeholder="INSERT INTO ..." />
-            <marker date="1495362167645" expanded="true" signature="5267:5320" placeholder="DELETE FROM ..." />
-            <marker date="1495362167645" expanded="true" signature="5619:5688" placeholder="SELECT * FRO... Hubcodes" />
-            <marker date="1495362167645" expanded="true" signature="5853:5913" placeholder="SELECT * FRO... Devices" />
-            <marker date="1495362167645" expanded="true" signature="7586:7626" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7674" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7712" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7727" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="8100:8155" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="8631:8699" placeholder="INSERT INTO devices... " />
-            <marker date="1495362167645" expanded="true" signature="10591:10668" placeholder="SELECT * FRO... Devices" />
-            <marker date="1495362167645" expanded="true" signature="10871:10926" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="1050:1095" placeholder="SELECT ROWID... users" />
+            <marker date="1495366547972" expanded="true" signature="1720:1765" placeholder="SELECT ROWID..users..." />
+            <marker date="1495366547972" expanded="true" signature="3304:3377" placeholder="INSERT INTO ..." />
+            <marker date="1495366547972" expanded="true" signature="3468:3513" placeholder="SELECT ROWID..users..." />
+            <marker date="1495366547972" expanded="true" signature="4061:4125" placeholder="SELECT * FRO..Hubcodes..." />
+            <marker date="1495366547972" expanded="true" signature="4777:4829" placeholder="INSERT INTO ..." />
+            <marker date="1495366547972" expanded="true" signature="5267:5320" placeholder="DELETE FROM ..." />
+            <marker date="1495366547972" expanded="true" signature="5619:5688" placeholder="SELECT * FRO... Hubcodes" />
+            <marker date="1495366547972" expanded="true" signature="5853:5913" placeholder="SELECT * FRO... Devices" />
+            <marker date="1495366547972" expanded="true" signature="7586:7626" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7674" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7712" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7727" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="8100:8155" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="8631:8699" placeholder="INSERT INTO devices... " />
+            <marker date="1495366547972" expanded="true" signature="10591:10668" placeholder="SELECT * FRO... Devices" />
+            <marker date="1495366547972" expanded="true" signature="10871:10926" placeholder="UPDATE Devic... " />
           </folding>
         </state>
       </provider>
@@ -914,23 +909,23 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
-            <marker date="1495362167645" expanded="true" signature="1050:1095" placeholder="SELECT ROWID... users" />
-            <marker date="1495362167645" expanded="true" signature="1720:1765" placeholder="SELECT ROWID..users..." />
-            <marker date="1495362167645" expanded="true" signature="3304:3377" placeholder="INSERT INTO ..." />
-            <marker date="1495362167645" expanded="true" signature="3468:3513" placeholder="SELECT ROWID..users..." />
-            <marker date="1495362167645" expanded="true" signature="4061:4125" placeholder="SELECT * FRO..Hubcodes..." />
-            <marker date="1495362167645" expanded="true" signature="4777:4829" placeholder="INSERT INTO ..." />
-            <marker date="1495362167645" expanded="true" signature="5267:5320" placeholder="DELETE FROM ..." />
-            <marker date="1495362167645" expanded="true" signature="5619:5688" placeholder="SELECT * FRO... Hubcodes" />
-            <marker date="1495362167645" expanded="true" signature="5853:5913" placeholder="SELECT * FRO... Devices" />
-            <marker date="1495362167645" expanded="true" signature="7586:7626" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7674" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7712" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7727" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="8100:8155" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="8631:8699" placeholder="INSERT INTO devices... " />
-            <marker date="1495362167645" expanded="true" signature="10591:10668" placeholder="SELECT * FRO... Devices" />
-            <marker date="1495362167645" expanded="true" signature="10871:10926" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="1050:1095" placeholder="SELECT ROWID... users" />
+            <marker date="1495366547972" expanded="true" signature="1720:1765" placeholder="SELECT ROWID..users..." />
+            <marker date="1495366547972" expanded="true" signature="3304:3377" placeholder="INSERT INTO ..." />
+            <marker date="1495366547972" expanded="true" signature="3468:3513" placeholder="SELECT ROWID..users..." />
+            <marker date="1495366547972" expanded="true" signature="4061:4125" placeholder="SELECT * FRO..Hubcodes..." />
+            <marker date="1495366547972" expanded="true" signature="4777:4829" placeholder="INSERT INTO ..." />
+            <marker date="1495366547972" expanded="true" signature="5267:5320" placeholder="DELETE FROM ..." />
+            <marker date="1495366547972" expanded="true" signature="5619:5688" placeholder="SELECT * FRO... Hubcodes" />
+            <marker date="1495366547972" expanded="true" signature="5853:5913" placeholder="SELECT * FRO... Devices" />
+            <marker date="1495366547972" expanded="true" signature="7586:7626" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7674" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7712" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7727" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="8100:8155" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="8631:8699" placeholder="INSERT INTO devices... " />
+            <marker date="1495366547972" expanded="true" signature="10591:10668" placeholder="SELECT * FRO... Devices" />
+            <marker date="1495366547972" expanded="true" signature="10871:10926" placeholder="UPDATE Devic... " />
           </folding>
         </state>
       </provider>
@@ -1007,14 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="448" column="0" selection-start-line="448" selection-start-column="0" selection-end-line="448" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/devices.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -1023,53 +1010,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/devices.js">
+    <entry file="file://$PROJECT_DIR$/static/js/ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1472">
-          <caret line="67" column="55" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="281" column="26" selection-start-line="281" selection-start-column="26" selection-end-line="281" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-            <marker date="1495362167645" expanded="true" signature="1050:1095" placeholder="SELECT ROWID... users" />
-            <marker date="1495362167645" expanded="true" signature="1720:1765" placeholder="SELECT ROWID..users..." />
-            <marker date="1495362167645" expanded="true" signature="3304:3377" placeholder="INSERT INTO ..." />
-            <marker date="1495362167645" expanded="true" signature="3468:3513" placeholder="SELECT ROWID..users..." />
-            <marker date="1495362167645" expanded="true" signature="4061:4125" placeholder="SELECT * FRO..Hubcodes..." />
-            <marker date="1495362167645" expanded="true" signature="4777:4829" placeholder="INSERT INTO ..." />
-            <marker date="1495362167645" expanded="true" signature="5267:5320" placeholder="DELETE FROM ..." />
-            <marker date="1495362167645" expanded="true" signature="5619:5688" placeholder="SELECT * FRO... Hubcodes" />
-            <marker date="1495362167645" expanded="true" signature="5853:5913" placeholder="SELECT * FRO... Devices" />
-            <marker date="1495362167645" expanded="true" signature="7586:7626" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7674" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7712" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="7586:7727" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="8100:8155" placeholder="UPDATE Devic... " />
-            <marker date="1495362167645" expanded="true" signature="8631:8699" placeholder="INSERT INTO devices... " />
-            <marker date="1495362167645" expanded="true" signature="10591:10668" placeholder="SELECT * FRO... Devices" />
-            <marker date="1495362167645" expanded="true" signature="10871:10926" placeholder="UPDATE Devic... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/devices.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="72" column="67" selection-start-line="72" selection-start-column="60" selection-end-line="72" selection-end-column="67" />
+        <state relative-caret-position="392">
+          <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1087,11 +1031,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/ajax.js">
+    <entry file="file://$PROJECT_DIR$/templates/devices.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+        <state relative-caret-position="198">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/devices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1910">
+          <caret line="448" column="0" selection-start-line="448" selection-start-column="0" selection-end-line="448" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-748">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="375" column="28" selection-start-line="375" selection-start-column="28" selection-end-line="375" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+            <marker date="1495366547972" expanded="true" signature="1050:1095" placeholder="SELECT ROWID... users" />
+            <marker date="1495366547972" expanded="true" signature="1720:1765" placeholder="SELECT ROWID..users..." />
+            <marker date="1495366547972" expanded="true" signature="3304:3377" placeholder="INSERT INTO ..." />
+            <marker date="1495366547972" expanded="true" signature="3468:3513" placeholder="SELECT ROWID..users..." />
+            <marker date="1495366547972" expanded="true" signature="4061:4125" placeholder="SELECT * FRO..Hubcodes..." />
+            <marker date="1495366547972" expanded="true" signature="4777:4829" placeholder="INSERT INTO ..." />
+            <marker date="1495366547972" expanded="true" signature="5267:5320" placeholder="DELETE FROM ..." />
+            <marker date="1495366547972" expanded="true" signature="5619:5688" placeholder="SELECT * FRO... Hubcodes" />
+            <marker date="1495366547972" expanded="true" signature="5853:5913" placeholder="SELECT * FRO... Devices" />
+            <marker date="1495366547972" expanded="true" signature="7586:7626" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7674" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7712" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="7586:7727" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="8100:8155" placeholder="UPDATE Devic... " />
+            <marker date="1495366547972" expanded="true" signature="8631:8699" placeholder="INSERT INTO devices... " />
+            <marker date="1495366547972" expanded="true" signature="10591:10668" placeholder="SELECT * FRO... Devices" />
+            <marker date="1495366547972" expanded="true" signature="10871:10926" placeholder="UPDATE Devic... " />
+          </folding>
         </state>
       </provider>
     </entry>
