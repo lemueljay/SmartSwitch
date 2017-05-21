@@ -88,9 +88,10 @@ $(document).ready(function() {
     })
 
     $('#addthisdevice').click(function() {
-       var hubcode = $('#hubcodehere').val();
+       var hubcode = $('#hubtext').text();
        var device_name = $('input[name=device-name]').val();
        var device_room = $('input[name=device-room]').val();
+       console.log(hubcode + ', ' + device_name + ', ' + device_room);
         $.ajax({
             type: 'POST',
             url: '/adddevice',
