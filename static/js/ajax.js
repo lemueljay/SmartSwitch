@@ -87,6 +87,20 @@ $(document).ready(function() {
         })
     })
 
+    $('#addthisdevice').click(function() {
+       var hubcode = $('#hubcodehere').val();
+       var device_name = $('input[name=device-name]').val();
+       var device_room = $('input[name=device-room]').val();
+        $.ajax({
+            type: 'POST',
+            url: '/adddevice',
+            data: JSON.stringify({'hubcode': hubcode, 'device_name': device_name, 'device_room': device_room}),
+            contentType: 'application/json;charset=UTF=8',
+            success: function(data) {
+                $('.devices-list').load('/devices')
+            }
+        });
+    });
 
 
 })

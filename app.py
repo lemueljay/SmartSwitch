@@ -263,6 +263,24 @@ def unscheduler_datetime():
             cur.close()
         return "Lemmeister"
 
+@app.route('/adddevice', methods=['GET', 'POST'])
+def adddevice():
+    if request.method == 'POST':
+        hubcode = request.json['hubcode']
+        device_name = request.json['device_name']
+        device_room = request.json['device_room']
+        with sqlite3.connect("smart.sqlite") as con:
+            cur = con.cursor()
+            cur.execute('INSERT INTO devices (hubcode,device_name,device_room) VALUES (?,?,?)',
+                        (hubcode, device_name, device_room))
+            con.commit()
+            cur.close()
+        device = {}
+        device['hubcode'] = hubcode
+        device['device_name'] = device_name
+        device['device_room'] = device_room
+        return "Lemmeister"
+
 # SOCKETS
 
 

@@ -138,6 +138,29 @@
 </div>
 
 
+<!-- Add Device modal -->
+
+<div class="modal fade bs-adddevice-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      ADD DEVICE
+        <hr>
+        <form class="ui form">
+          <div class="field">
+            <label>Device Name</label>
+            <input type="text" name="device-name" placeholder="Device Name">
+          </div>
+            <div class="field">
+            <label>Device Room</label>
+            <input type="text" name="device-room" placeholder="Device Room">
+          </div>
+          <button id="addthisdevice" class="ui button" type="button">Add Device</button>
+        </form>
+    </div>
+  </div>
+</div>
+
+
 <!-- SIDEBAR -->
 
 <div class="sidebar left" style="z-index: 999; position: fixed;">
@@ -260,6 +283,7 @@
         <div class="startingcontainer sectioncontainer">
              <div id="connectn" class="col-xs-12">
                 CONNECTION STATUS: <span class="hub_status" class="online">Online</span><span id="hubcodehere" class="hidden">{{ user.hubcode }}</span>
+                 <span><button id="adddevbtn" class="ui button green" data-toggle="modal" data-target=".bs-adddevice-modal-lg">Add Device</button></span>
                 <hr>
             </div>
             <div class="devices-list">
