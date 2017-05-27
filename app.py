@@ -341,6 +341,11 @@ def server_event_listener(data):
     emit('hub_event_listener', data, broadcast=True)
 
 
+@socketio.on('node_data')
+def node_data(data):
+	print("DATA FROM NODES: " + data['temp'] + ', ' + data['hum'] + ', ' + str(data['state']))
+	emit('sensor_status', data, broadcast=True)
+	
 def run_schedule():
     while True:
         schedule.run_pending()
@@ -373,7 +378,7 @@ if __name__ == '__main__':
     schedule.every(1).seconds.do(job)
     t = Thread(target=run_schedule)
     t.start()
-    socketio.run(app, host='192.168.137.1', port=5000)
+    socketio.run(app)
 
 
 
